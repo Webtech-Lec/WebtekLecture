@@ -70,41 +70,183 @@
 			<article class="container box style3">
 				<header>
 					<h2>Prelims Notes</h2>
-					<p>Nothing to see here...kidding. There is.</p>
+					<p>HTTP Fundamentals | HTTP Headers | HTTP Status Codes</p>
 				</header>
 				<section>
 					<header>
-						<h3>Paragraph</h3>
-						<p>This is a subtitle</p>
+						<h3>HTTP</h3>
+						<p>HyperText Transfer Protocol</p>
 					</header>
-					<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+					<p>It is an application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web. 
+					It was invented by Sir Tim Berners-Lee and later was jointly developed by the W3C and the IETF</p>
+					<!--<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
 					habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
 					leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-					amet risus elit.</p>
-				</section>
+					amet risus elit.</p>-->
+					<p><center>Versions</center></p>
+						<ul class="default">
+							<li>HTTP 0.9 (1991)</li>
+							<li>HTTP 1.0 (RFC 1945, May 1996)</li>
+							<li>HTTP 1.1 (RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014)</li>
+							<li>HTTP 2 (RFC 7540 May 2015)</li>
+					</ul>
+				</section><!--end of the introduction about http-->
+				<hr />
 				<section>
 					<header>
-						<h3>Blockquote</h3>
+						<h3>HTTP Fundamentals</h3>
 					</header>
-					<p>Insert Something Here</p>
-				</section>
-				<section>
-					<header>
-						<h3>Divider</h3>
-					</header>
-					<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
+					<p>> HTTP runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS)</p>
+					<p>> HTTP is based on a client-server, architecture.</p>
+						<ul class="default">
+							<li>clients, aka user agents (UA):</li>
+					</ul>
+					<p>> Web browsers, web crawlers/spiders, other end user tools and applications</p>
+						<ul class="default">
+							<li>Servers:
+								<ul class="default">
+									<li>Origin servers</li>
+									<li>Proxy servers, gateways, tunnels</li>
+								</ul>
+							</li>
+					</ul>
+					<p>>  HTTP uses a request-response standard protocol</p>
+						<ul class="default">
+							<li>the client sends an HTTP request message to the server</li>
+							<li>the server processes the request and replies with an HTTP response message</li>
+						</ul>
+					<p>>  HTTP is a stateless communications protocol</p>
+						<ul class="default">
+							<li>servers do not keep information about clients in-between requests.</li>
+						</ul>
+					<p>>  HTTP provides support for other functionalities, such as:</p>
+						<ul class="default">
+							<li>Cache Control</li>
+							<li>Content media type (MIME - Multipurpose Internet Mail Extensions) specification</li>
+							<li>Language and Character set specification</li>
+							<li>Content/Transfer coding</li>
+							<li>Content negotiation</li>
+							<li>Client-server protocol negotiations</li>
+							<li>Persistent Connections</li>
+							<li>Request pipelining</li>
+							<li>Authentication/ Authorizaton</li>
+							<li>etc.</li>
+						</ul>
 					<hr />
-					<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-				</section>
+				</section><!--End of http fundametals-->
 				<section>
+				<header>
+					<h3>HTTP Resource Addressing</h3>
+				</header>
+					<p>> HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs.</p>
+						<ul class="default">
+							<li>Scheme (http or https)</li>
+							<li>Authority
+								<ul class="default">
+								<li>>> User information or authentication credentials(deprecated)</li>
+								<li>>> Host
+									<ul class="default">
+									<li>Domain name(resolve to an IP addreess using DNS) of the server where the resource resides (or will be created).</li>
+									</ul>
+								</li>
+								<li>>> Post-Number</li>
+								</ul>
+							</li>
+							<li>Path to resolve (resolved relative to the document root on the server)
+								<ul class="default">
+									<li>may prefer to a static or dyamic resource.</li>
+									</ul>
+							</li>
+							<li>Query
+								<ul class="default">
+									<li>>> Typically provided as key=value pairs, with ampersand(&) separators between key/value pairs.</li>
+									<li>>> may be URL-encoded</li>
+									</ul>
+							</li>
+							<li>Fragment Identifier</li>
+						</ul>
+				
+					<hr />
+				</section><!--End of http resource addressing-->
+				<section>
+				<header>
+				<h3>HTTP Request Message</h3>
+				</header>
+				<ul class="default">
+					<li>Request Line
+						<ul class="default">
+							<li>>> Method</li>
+							<li>>> Request URI</li>
+							<li>>> HTTP Protocol Versions</li>
+						</ul>
+					</li>
+					<li>Message Headers
+						<ul class="default">
+							<li>>> HTTP 1.1 requires at least the Host request header to be provided.</li>
+						</ul>
+						</li>
+					<li>Empty Line</li>
+					<li>Message Body AKA payload (optional)</li>
+				</ul>	
+					<hr />
+				</section><!--End of HTTP Request Message-->
+				
+				<section>
+					<header>
+						<h3>HTTP Request Method</h3>
+					</header>
+					<h4>Standard Methods</h4>
+					<dl>
+						<dt>GET
+							<dd>- Transfer a current selected representation of the resource identified by the request URI; the retrieved resource is returned in the message of the response as an entity.</dd>
+							<dd>- Most commonly used HTTP method.</dd>
+							<dd>- Must be supported by all compliant general-purpose servers.</dd>
+						</dt>
+						
+						<dt>HEAD
+							<dd>- Same as GET,except that the entity is not included in the response (ie. Returns only the status line and the headers returned by a GET request, without the message body).</dd>
+							<dd>- Used to retrieve metadata about the entity implied by the request without transferring the entity itself. (eg. To test for link validity or resource modification)</dd>
+							<dd>- Like GET, must be supported by all general-purpose servers</dd>
+						</dt>
+						
+						<dt>POST
+							<dd>- Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the request URI.</dd>
+							<dd>- Typically used in submitting HTML form data</dd>
+						</dt>
+						
+						<dt>PUT
+							<dd>- Store the enclosed entity in the message body under the specified Request URI (ie the resource identified by the request URI is either created or replaced, using the enclosed entity).</dd>
+						</dt>
+					</dl>
+					
+					<h4>Extension Method</h4>
+					<dl>
+						<dt>DELETE
+							<dd>- Removes the resources.</dd>
+						</dt>
+						
+						<dt>OPTIONS
+							<dd>- Request information about the communication</dd>
+						</dt>
+						
+						<dt>TRACE
+							<dd>- Request a loop-back of the request message (ie request the server to echo back to the client the received request message)</dd>
+							<dd>- Typically used for teaching/diagnostics of the request/response shown</dd>
+						</dt>
+						
+						<dt>CONNECT
+							<dd>- Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restrict its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed.</dd>
+							<dd>- Commonly used to create an end to end virtual connection.</dd>
+						</dt>
+					</dl>
+
+					<h4>Safe Methods, Idempotent Methods, Cacheble Methods.</h4>
+				
+				<hr />
+				</section><!--End of HTTP Request Method-->
+			
+		
+					<section>
 					<header>
 						<h3>Unordered List</h3>
 					</header>
