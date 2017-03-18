@@ -10,7 +10,7 @@
 	</head>
 	<body>
 
-		<!-- Header | Landing Page-->
+		<!-- Header | Home Page-->
 			<section id="header">
 				<header>
 					<img src="images/webtek.png">
@@ -70,183 +70,194 @@
 			<article class="container box style3">
 				<header>
 					<h2>Prelims Notes</h2>
-					<p>HTTP Fundamentals | HTTP Headers | HTTP Status Codes</p>
 				</header>
 				<section>
 					<header>
 						<h3>HTTP</h3>
-						<p>HyperText Transfer Protocol</p>
 					</header>
-					<p>It is an application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web. 
-					It was invented by Sir Tim Berners-Lee and later was jointly developed by the W3C and the IETF</p>
-					<!--<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
-					habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
-					leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
-					amet risus elit.</p>-->
-					<p><center>Versions</center></p>
-						<ul class="default">
-							<li>HTTP 0.9 (1991)</li>
-							<li>HTTP 1.0 (RFC 1945, May 1996)</li>
-							<li>HTTP 1.1 (RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014)</li>
-							<li>HTTP 2 (RFC 7540 May 2015)</li>
+					<ul class="default">
+						<li> Created by Tim Berners-Lee </li>
+						<li> Jointly developed by the W3C and the IETF</li>
+						<li> Layered Approach</li>
+						<li> Plain Text</li>
+						<li> Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web</li>
+						<li> Version History</li>
+							<ul class="default">
+								<li> HTTP 0.9 (1991) </li>
+								<li> HTTP 1.0 (RFC 1945, May 1996) </li> 
+								<li> HTTP 1.1 (RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014) </li>
+								<li> HTTP 2 (RFC 7540 May 2015, patterned after SPDY)</li>
+							</ul>
 					</ul>
-				</section><!--end of the introduction about http-->
-				<hr />
+				</section>
 				<section>
 					<header>
 						<h3>HTTP Fundamentals</h3>
 					</header>
-					<p>> HTTP runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS)</p>
-					<p>> HTTP is based on a client-server, architecture.</p>
-						<ul class="default">
-							<li>clients, aka user agents (UA):</li>
-					</ul>
-					<p>> Web browsers, web crawlers/spiders, other end user tools and applications</p>
-						<ul class="default">
-							<li>Servers:
-								<ul class="default">
-									<li>Origin servers</li>
-									<li>Proxy servers, gateways, tunnels</li>
-								</ul>
-							</li>
-					</ul>
-					<p>>  HTTP uses a request-response standard protocol</p>
-						<ul class="default">
-							<li>the client sends an HTTP request message to the server</li>
-							<li>the server processes the request and replies with an HTTP response message</li>
-						</ul>
-					<p>>  HTTP is a stateless communications protocol</p>
-						<ul class="default">
-							<li>servers do not keep information about clients in-between requests.</li>
-						</ul>
-					<p>>  HTTP provides support for other functionalities, such as:</p>
-						<ul class="default">
-							<li>Cache Control</li>
-							<li>Content media type (MIME - Multipurpose Internet Mail Extensions) specification</li>
-							<li>Language and Character set specification</li>
-							<li>Content/Transfer coding</li>
-							<li>Content negotiation</li>
-							<li>Client-server protocol negotiations</li>
-							<li>Persistent Connections</li>
-							<li>Request pipelining</li>
-							<li>Authentication/ Authorizaton</li>
-							<li>etc.</li>
-						</ul>
-					<hr />
-				</section><!--End of http fundametals-->
-				<section>
-				<header>
-					<h3>HTTP Resource Addressing</h3>
-				</header>
-					<p>> HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs.</p>
-						<ul class="default">
-							<li>Scheme (http or https)</li>
-							<li>Authority
-								<ul class="default">
-								<li>>> User information or authentication credentials(deprecated)</li>
-								<li>>> Host
+					<ul class="default">
+						<li> Runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS) </li>
+						<li> HTTP is based on a client-server, architecture </li>
+							<ul class="default">
+								<li> Clients (user agents UA): </li>
 									<ul class="default">
-									<li>Domain name(resolve to an IP addreess using DNS) of the server where the resource resides (or will be created).</li>
+										<li> Web browsers, web crawlers/spiders, other end user tools and applications</li>
 									</ul>
-								</li>
-								<li>>> Post-Number</li>
-								</ul>
-							</li>
-							<li>Path to resolve (resolved relative to the document root on the server)
-								<ul class="default">
-									<li>may prefer to a static or dyamic resource.</li>
-									</ul>
-							</li>
-							<li>Query
-								<ul class="default">
-									<li>>> Typically provided as key=value pairs, with ampersand(&) separators between key/value pairs.</li>
-									<li>>> may be URL-encoded</li>
-									</ul>
-							</li>
-							<li>Fragment Identifier</li>
-						</ul>
-				
-					<hr />
-				</section><!--End of http resource addressing-->
-				<section>
-				<header>
-				<h3>HTTP Request Message</h3>
-				</header>
-				<ul class="default">
-					<li>Request Line
-						<ul class="default">
-							<li>>> Method</li>
-							<li>>> Request URI</li>
-							<li>>> HTTP Protocol Versions</li>
-						</ul>
-					</li>
-					<li>Message Headers
-						<ul class="default">
-							<li>>> HTTP 1.1 requires at least the Host request header to be provided.</li>
-						</ul>
+							</ul>
+						<li> HTTP uses a request-response standard protocol </li>
+							<ul class="default">
+								<li> the client sends an HTTP request message to the server</li>
+								<li> the server processes the request and replies with an HTTP response message </li>
+							</ul>
+						<li> HTTP is a stateless communications protocol </li>
+							<ul class="default">
+								<li> servers do not keep information about clients in-between requests</li>
+							</ul>
+						<li> HTTP provides support for other functionalities, such as:
 						</li>
-					<li>Empty Line</li>
-					<li>Message Body AKA payload (optional)</li>
-				</ul>	
-					<hr />
-				</section><!--End of HTTP Request Message-->
-				
+							<ul class="default">
+								<li> cache control – to cache or not to cache (Locality of Reference – only use when needed).</li>
+								<li> content media type (MIME - Multipurpose Internet Mail Extensions) specification – no reliance on file name extension and can be opened regardless.</li>
+								<li> language and character set specification (Unicode/ASCII)</li>
+								<li>content/transfer coding (byte by byte stream, compression up to 80-90%)</li>
+								<li>content negotiation – agreement between handling of content by the server and the client (file type, language, compression)</li>
+								<li> client-server protocol negotiations (HTTP 1.0, 1.1 or 1.2)</li>
+								<li> persistent connections – client retains connection to server after request and response have been sent and received.</li>
+								<li> request pipelining – one requests at a time (wait for response).</li>
+								<li>authentication/authorization</li>
+							</ul>
+						<li> Pre HTTP2 servers won’t volunteer data to clients. Client must request for the data before being given said data.</li>
+						<li>HTTP 2 follows the “push” protocol which allows servers to volunteer info based on client requests. </li>
+					</ul>
+				</section>
 				<section>
 					<header>
-						<h3>HTTP Request Method</h3>
+						<h3>HTTP Resource Addressing</h3>
 					</header>
-					<h4>Standard Methods</h4>
-					<dl>
-						<dt>GET
-							<dd>- Transfer a current selected representation of the resource identified by the request URI; the retrieved resource is returned in the message of the response as an entity.</dd>
-							<dd>- Most commonly used HTTP method.</dd>
-							<dd>- Must be supported by all compliant general-purpose servers.</dd>
-						</dt>
-						
-						<dt>HEAD
-							<dd>- Same as GET,except that the entity is not included in the response (ie. Returns only the status line and the headers returned by a GET request, without the message body).</dd>
-							<dd>- Used to retrieve metadata about the entity implied by the request without transferring the entity itself. (eg. To test for link validity or resource modification)</dd>
-							<dd>- Like GET, must be supported by all general-purpose servers</dd>
-						</dt>
-						
-						<dt>POST
-							<dd>- Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the request URI.</dd>
-							<dd>- Typically used in submitting HTML form data</dd>
-						</dt>
-						
-						<dt>PUT
-							<dd>- Store the enclosed entity in the message body under the specified Request URI (ie the resource identified by the request URI is either created or replaced, using the enclosed entity).</dd>
-						</dt>
-					</dl>
-					
-					<h4>Extension Method</h4>
-					<dl>
-						<dt>DELETE
-							<dd>- Removes the resources.</dd>
-						</dt>
-						
-						<dt>OPTIONS
-							<dd>- Request information about the communication</dd>
-						</dt>
-						
-						<dt>TRACE
-							<dd>- Request a loop-back of the request message (ie request the server to echo back to the client the received request message)</dd>
-							<dd>- Typically used for teaching/diagnostics of the request/response shown</dd>
-						</dt>
-						
-						<dt>CONNECT
-							<dd>- Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restrict its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed.</dd>
-							<dd>- Commonly used to create an end to end virtual connection.</dd>
-						</dt>
-					</dl>
+					<ul class="default">
+						<li> Uniform Resource Name (URN) – does not matter where location is; check data availability. </li>
+						<li> Uniform Resource Locator (URL) – same as URN but also points out the location of the data.</li>
+						<li> HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs</li>
+							<ul class="default">
+								<li> Scheme (HTTP or HTTPS protocols)</li>
+									<ul class="default">
+										<li> Ex. http:// or https:// </li>
+									</ul>
+								<li>Authority </li> 
+									<ul class="default">
+										<li> domain name (resolved to an IP address using DNS) of the server where the resource resides. </li>
+										<li> Port number (optional) </li>
+										<li> Ex. serverhere.com:8080 </li>
+									</ul>
+								<li> Path to resource (resolved relative to the document root on the server)</li>
+									<ul class="default">
+										<li> May refer to a static or dynamic resource.</li>
+										<li> Ex. /where/here/there.pdf</li>
+									</ul>
+								<li> Query</li>
+									<ul class="default">
+										<li> Typically provided as key=value pairs, with ampersand (&) separators between key/value pairs..</li>
+										<li> May be URL encoded.</li>
+									</ul>
+								<li> Fragment identifier</li>
+									<ul class="default">
+										<li> Denoted via a pound sign.</li>
+									</ul>
+							</ul>
+					</ul>
+				</section>
+				<section>
+					<header>
+						<h3>HTTP Request Message</h3>
+					</header>
+					<ul class="default">
+						<li> Request Line (CRLF - terminated line)</li>
+							<ul class="default">
+							<li> Method </li>
+							<li> Request URI </li>
+							<li> HTTP Protocol Versions </li>
+							</ul>
+						<li> Message Headers (general, request, and/or entity leaders)</li>
+							<ul class="default">
+							<li> HTTP 1.1 requires at least the Host request header to be provided </li>
+							</ul>
+						<li> Empty Line (CRLF) – done with headers</li>
+						<li> Message Body (payload, optional)</li>
+					</ul>
+				</section>
+				<section>
+					<header>
+						<h3>HTTP Response Message</h3>
+					</header>
+					<ul class="default">
+						<li> Status Line (CRLF - terminated line consisting of three space-separated values)</li>
+							<ul class="default">
+							<li> HTTP Protocol Version </li>
+							<li> 3-Digit Status Code </li>
+							<li> Reason Phrase </li>
+							</ul>
+						<li> Message Headers (general, request, and/or entity leaders)</li>
+						<li> Empty Line (CRLF) </li>
+						<li> Message Body (optional)</li>
+					</ul>
+				</section>
+				<section>
+					<header>
+						<h3>HTTP Request Methods</h3>
+					</header>
+					<ul class="default">
+						<li> •	Status Line (CRLF - terminated line consisting of three space-separated values)</li>
+							<ul class="default">
+							<li> HTTP Protocol Version </li>
+							<li> 3-Digit Status Code </li>
+							<li> Reason Phrase </li>
+							</ul>
+						<li> Message Headers (general, request, and/or entity leaders)</li>
+						<li> Empty Line (CRLF) </li>
+						<li> Message Body (optional)</li>
+					</ul>
+				</section>
 
-					<h4>Safe Methods, Idempotent Methods, Cacheble Methods.</h4>
-				
-				<hr />
-				</section><!--End of HTTP Request Method-->
-			
-		
-					<section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<section>
+					<header>
+						<h3>Divider</h3>
+					</header>
+					<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
+					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+					posuere cubilia.</p>
+					<hr />
+					<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+					<hr />
+					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+					posuere cubilia.</p>
+				</section>
+				<section>
 					<header>
 						<h3>Unordered List</h3>
 					</header>
