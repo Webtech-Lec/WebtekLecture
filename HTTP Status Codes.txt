@@ -1,0 +1,62 @@
+ 
+HTTP Status Codes
+•	Informational (1xx)
+100 Continue -when doing 2 phase, 1st phase then protocol; the client should continue with its request	
+101 Switching Protocols -can upgrade protocol then send; the server will switch protocol to those defined by the response’s upgrade header field immediately after the empty line which terminates the 101 response
+
+ 
+•	Success (2xx)
+ 
+200 Ok -most common; just send pictures, message
+201 Created -submit via put; the request has been fulfilled and resulted in a new resource being created
+202 Accepted -submit/accept but not process it yet; the request might not be eventually acted upon as it might be disallowed when processing actually takes place
+203 Non-Authoritative Information -the set presented may be a subset of the original version; it is not required and is only appropriate when the response when the response would be 200 otherwise
+204 No Content -the request has been submitted but does not return anything in the entity-body
+205 Reset Content -the request has been submitted and the server agent should reset the document view.
+206 Partial Content -the partial GET request for the resource has been sent 
+
+•	Redirection (3xx)
+ 
+300 Multiple Choices -if the server has a preferred choice of representation, it should include the specific URI for the representation in the location field
+*301 Moved Permanently -the request has been moved to a new permanent URI; the response is cacheable unless indicated
+*302 Found -the response is only cacheable if it is indicated by a cache-control or expires header field
+*303 See Other -the response must not be cached; this exists primarioly to allow the output of a script to redirect the user agent to a selected resource
+304 Not Modified -this response must not contain a message-body, and is always terminated by the empty line after the header fields
+305 Use Proxy -the request must be accessed through proxy given by the location field
+306 (unused)
+*307 Temporary Redirect -the client should contain a short hypertet notewith a hyperlink to the new URI unless the request is a HEAD
+ 
+	*-Different version of Redirection
+ 
+
+•	Client Error (4xx)
+ 
+400 Bad Request -1 Unauthorized -f the request already included Authorization credentials, then the 401 response indicates that authorization has been refused for those credentials.
+402 Payment Required -it is required for future use
+403 Forbidden -If the server does not wish to make this information available to the client, this status code can be used instead.
+404 Not Found -This status code is commonly used when the server does not wish to reveal exactly why the request has been refused, or when no other response is applicable.
+405 Method Not Allowed -The response MUST include an Allow header containing a list of valid methods for the requested resource.
+406 Not Acceptable -The resource identified by the request is only capable of generating response entities which have content characteristics not acceptable according to the accept headers sent in the request.
+407 Proxy Authentication Required -it indicates that the client must first authenticate itself with the proxy.
+408 Request Time-out -The client MAY repeat the request without modifications at any later time.
+409 Conflict -The request could not be completed due to a conflict with the current state of the resource. This code is only allowed in situations where it is expected that the user might be able to resolve the conflict and resubmit the request.
+410 Gone -This condition is expected to be considered permanent. The request is no longer available at the server and no forwarding address is known.
+411 Length Required -he client may repeat the request if it adds a valid Content-Length header field containing the length of the message-body in the request message.
+412 Precondition Failed -This allows the client to place preconditions on the current resource metainformation
+413 Request Entity Too Large -The server is refusing to process a request because the request entity is larger than the server is willing or able to process. The server MAY close the connection to prevent the client from continuing the request.
+414 Request-URI Too Large -The server is refusing to service the request because the Request-URI is longer than the server is willing to interpret.
+415 Unsupported Media Type -The server is refusing to service the request because the entity of the request is in a format not supported by the requested resource for the requested method.
+416 Request Range Not Satisfiable -A server should return a response with this status code if a request included a Range request-header field
+417 Expectation Failed -The expectation given in an Expect request-header field  could not be met by this server
+426 Upgrade Required (newly added. 2014 version)
+ 
+
+•	Server Error (5xx)
+500 Internal Server Error -The server encountered an unexpected condition which prevented it from fulfilling the request.
+501 Not Implemented -The server does not support the functionality required to fulfill the request.
+502 Bad Gateway -The server, while acting as a gateway or proxy, received an invalid response from the upstream server it accessed in attempting to fulfill the request.
+503 Service Unavailable -The server is currently unable to handle the request due to a temporary overloading or maintenance of the server.
+504 Gateway Time-out -The server, while acting as a gateway or proxy, did not receive a timely response from the upstream server specified by the URI needed to access in attempting to complete the request.
+505 HTTP Version Not Supported -The server is indicating that it is unable or unwilling to complete the request using the same major version as the client
+
+RFC 2616 Fielding, et al. (N.D.). 10 Status Code Definitions. Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html
