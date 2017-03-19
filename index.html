@@ -10,6 +10,21 @@
 	</head>
 	<body>
 
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Contents</a>
+	  <a href="#">Prelims</a>
+	  <a href="#">Midterms</a>
+	  <a href="#">Finals</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+	<span onclick="openNav()">☰ Menu</span>
+
+
+
+	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+	<div id="main">
 		<!-- Header | Home Page-->
 			<section id="header">
 				<header>
@@ -72,8 +87,9 @@
 					<h2>Prelims Notes</h2>
 				</header>
 				<section>
+					<details>
 					<header>
-						<h3>HTTP</h3>
+						<summary><h3>HTTP</h3></summary>
 					</header>
 					<ul class="default">
 						<li> Created by Tim Berners-Lee </li>
@@ -89,7 +105,9 @@
 								<li> HTTP 2 (RFC 7540 May 2015, patterned after SPDY)</li>
 							</ul>
 					</ul>
+					<details>
 				</section>
+				</hr >
 				<section>
 					<header>
 						<h3>HTTP Fundamentals</h3>
@@ -200,96 +218,136 @@
 						<li> Message Body (optional)</li>
 					</ul>
 				</section>
+
 				<section>
 					<header>
 						<h3>HTTP Request Methods</h3>
 					</header>
-					<ul class="default">
-						<li> •	Status Line (CRLF - terminated line consisting of three space-separated values)</li>
+					<ui class="default">
+						<li> Standard Methods</li>
+					<ol class="default">
+						<li> GET</li>
 							<ul class="default">
-							<li> HTTP Protocol Version </li>
-							<li> 3-Digit Status Code </li>
-							<li> Reason Phrase </li>
+								<li> Transfer a current selected representation of the resource identified by the Request URI; the retrieved resource is returned in the message of the response as an entity. </li>
+								<li> Most commonly used HTTP method. </li>
+								<li> Must be supported by all compliant general-purpose servers. </li>
 							</ul>
-						<li> Message Headers (general, request, and/or entity leaders)</li>
-						<li> Empty Line (CRLF) </li>
-						<li> Message Body (optional)</li>
-					</ul>
-				</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				<section>
-					<header>
-						<h3>Divider</h3>
-					</header>
-					<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-					<hr />
-					<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
-					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
-					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
-					<hr />
-					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-					posuere cubilia.</p>
-				</section>
-				<section>
-					<header>
-						<h3>Unordered List</h3>
-					</header>
-					<ul class="default">
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.
-						<ul class="default">
-						<li> mewo1 </li>
-						<li> mewo2 </li> 
-						</ul>
-						</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-					</ul>
+						<li> HEAD</li>
+							<ul class="default">
+								<li> Same as GET, except that the entity is not included in the response (returns only the status line and headers returned by a GET request, without the message body). </li>
+								<li> Used to retrieve metadata about the entity implied by the request without transferring the entity itself (tests for link validity or resource modification).</li>
+								<li> Like GET, must be supported by all general-purpose servers. </li>
+							</ul>
+						<li> POST</li>
+							<ul class="default">
+								<li>Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the Request URI. </li>
+								<li> Typically used in submitting HTML form data.</li>
+								<li> Has a payload.</li>
+							</ul>
+						<li> PUT</li>
+							<ul class="default">
+								<li> Store the enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is either created or replaced, using the enclosed entity). </li>
+							</ul>
+						<li> DELETE</li>
+							<ul class="default">
+								<li> Deletes the stored enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is deleted).</li>
+							</ul>
+						<li> OPTION</li>
+							<ul class="default">
+								<li> Request information about the communication. </li>
+								<li> Asks the server, “What can I do?”</li>
+								
+							</ul>
+						<li> TRACE</li>
+							<ul class="default">
+								<li> Request a loop-back of the request message (requests the server to echo back to the client the received request message). </li>
+								<li> Typically used for teaching/diagnostics of the request/response shown.</li>
+							</ul>
+						<li> CONNECT</li>
+							<ul class="default">
+								<li> Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restricts its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed. </li>
+								<li>Commonly used to create an end-to-end virtual connection.</li>
+							</ul>
+					</ol>
+						<li> Safe Methods, Idempotent Methods, Cacheable Methods </li>
+						<li> Extension Methods </li>
+							<ul class="default">
+								<li>Web DAV (RFC 4918) </li>
+								<li>PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+							</ul>
+					</ui>
 				</section>
 				<section>
 					<header>
-						<h3>Ordered List</h3>
+						<h3>HTTP Message Headers</h3>
 					</header>
 					<ol class="default">
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
-						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li> General Header Fields</li>
+							<ul class="default">
+								<li> Cache-Control </li>
+								<li> Connection Date </li>
+								<li> Date </li>
+								<li> Pragma </li>
+								<li> Trailer </li>
+								<li> Transfer-Encoding </li>
+								<li> Upgrade </li>
+								<li> Via </li>
+								<li> Warning </li>
+							</ul>
+						<li> Request Header Fields</li>
+							<ul class="default">
+								<li>Accept</li>
+								<li>Accept-Charset</li>
+								<li>Accept-Encoding</li>
+								<li>Accept-Language</li>
+								<li>Authorization</li>
+								<li>Expect</li>
+								<li>From</li>
+								<li>Host</li>
+								<li>If-Match *</li>
+								<li>If-Modified-Since *</li>
+								<li>If-None-Match *</li>
+								<li>If-Range *</li>
+								<li>If-Unmodified-Since</li>
+								<li>Max-Forwards</li>
+								<li>Proxy-Authorization</li>
+								<li>Proxy-Authorization</li>
+								<li>Range</li>
+								<li>Referrer</li>
+								<li>TE</li>
+								<li>User-Agent</li>
+							</ul>
+						<li> Response Header Fields </li>
+							<ul class="default">
+								<li>Accept-Ranges</li>
+								<li>Age</li>
+								<li>ETag (Entity Tag)</li>
+								<li>Location</li>
+								<li>Proxy-Authenticate</li>
+								<li>Retry-After</li>
+								<li>Server</li>
+								<li>Vary</li>
+								<li>WWW-Authenticate</li>
+							</ul>
+						<li> Entity Header Fields</li>
+							<ul class="default">
+								<li>Allow</li>
+								<li>Content-Encoding</li>
+								<li>Content-Language</li>
+								<li>Content-Length</li>
+								<li>Content-Location</li>
+								<li>Content-MD5(Message Digest)*</li>
+								<li>Content-Range</li>
+								<li>Content-Type</li>
+								<li>Expires</li>
+								<li>Last-Modified</li>
+							</ul>
 					</ol>
 				</section>
-				<section>
-					<header>
-						<h3>Table</h3>
-					</header>
-					<p>MEOW</p>
-				</section>
+
+
+
+
 				<section>
 					<header>
 						<h3>END</h3>
@@ -321,7 +379,20 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		</div>
+		<script>
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
+	function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
 	</body>
 </html>
 
