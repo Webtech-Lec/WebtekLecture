@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title> WebtekLek Lecture Course Website </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="Webtek Lecture Course Website">
+	<meta name="keywords"
+		content="Webtech Project, SCIS, course website, jo montes">
+	<meta name="authors"
+		content="John Joseph Dupingay, Mandy Lee, Jhennie Caroline Hiyasmin Prado, Rosmella Jhoy Soriano, Troy Zareno">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+	<script type='text/javascript' src="assets/js/softscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.11.0.js"></script>
+   <!-- Header | Home Page-->
+   <section id="head">
+      <header>
+         <img src="images/webtek.png" alt="landing page image">
+         <p></p>
+      </header>
+      <footer>
+         <a href="#banner" class="button style2 scrolly-middle">Proceed</a>
+      </footer>
+   </section>
+
+   <!-- Banner -->
+   <section id="banner">
+      <header>
+         <h2>Web Systems and Technologies</h2>
+      </header>
+      <p>Lecture notes for Prelims, Midterms, and Finals.</p>
+      <footer>
+         <a href="#first" class="button style2 scrolly">Topics Below</a>
+      </footer>
+   </section>
+
+   <!-- Prelims Nav-->
+   <article id="first" class="container box style1 right">
+      <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" />
+      </a>
+      <div class="inner">
+         <header>
+            <h2 id="prelims">Preliminaries</h2>
+         </header>
+         <p>
+            <a href="#Def1">Definitions|</a>
+            <a href="#HTTP1">HTTP |</a>
+            <a href="#HTTP2">HTTP Fundamentals |</a>
+            <a href="#HTTP3">HTTP Resource Addressing |</a>
+            <a href="#HTTP4">HTTP Request Message | </a>
+            <a href="#HTTP5">HTTP Response Message | </a>
+            <a href="#HTTP5">HTTP Request Methods | </a>
+            <a href="#HTTP6">HTTP Message Headers | </a>
+            <a href="#HTTP7">HTTP Status Codes |</a>
+         </p>
+      </div>
+   </article>
+   
+   <!-- Midterms Nav -->
+   <article class="container box style1 left">
+      <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" />
+      </a>
+      <div class="inner">
+         <header>
+            <h2 id="midterms">Mid-Semester</h2>
+         </header>
+         <p> Under Construction </p>
+      </div>
+   </article>
+   
+   <!-- Finals Nav-->
+   <article class="container box style1 right">
+      <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" />
+      </a>
+      <div class="inner">
+         <header>
+            <h2 id="finals">Finals</h2>
+         </header>
+         <p> Under Construction </p>
+      </div>
+   </article>
+
+   <!-- Prelim Notes-->
+   <div class="emptyblock"></div>
+
+   <section id="banner">
+      <header>
+         <h2>Prelims</h2>
+      </header>
+      <p> Second Semester | 2017 </p>
+   </section>
+   
+   <!-- 
+	<article class="container box style3">
+      <header>
+        <img src="images/prelims.png" alt="prelims">
+      </header>
+   </article>
+   -->
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="Def1"> Definitions </h2>
+         </header>
+         <details>
+            <summary> Internet </summary>
+			<p></p>
+            <p> - A series of computer networks connected globally and communicate using the standard Internet 
+			Protocol Suite (TCP/IP). Any communication between two computers worldwide is possible when 
+			connected to the Internet. </p>
+			<p> - Created and tested in ARPANET </p>
+			<p> - Email was introduced (1972). </p>
+			<p></p>
+         </details>
+         <details>
+            <summary> World Wide Web </summary>
+			<p></p>
+            <p> - A way of retrieving and reading information shared throughout the Internet, using the HTTP/
+			HTTPS protocol to store and share information. Web browsers are used to view documents and files 
+			are stored in Web readable formats such as HTML and CSS. </p>
+			<p> - Created by Tim Berners-Lee in his research at Cern (1989). </p>
+			<p></p>
+         </details>
+         <details>
+            <summary> Intranet </summary>
+			<p></p>
+            <p> - Limited network connection within a certain region or area, within a boundary. </p>
+			<p></p>
+         </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="HTTP1"> HTTP </h2>
+         </header>
+         <details>
+            <summary> HyperText Transfer Protocol </summary>
+			<p></p>
+            <ul class="default">
+               <li> Created by Tim Berners-Lee </li>
+               <li> Jointly developed by the W3C and the IETF </li>
+               <li> Layered Approach </li>
+               <li> Plain Text Data</li>
+               <li> Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web</li>
+            </ul>
+			<p></p>
+         </details>
+         <details>
+            <summary> Version History</summary>
+			<p></p>
+            <ul class="default">
+               <li> HTTP 0.9 (1991) </li>
+               <li> HTTP 1.0 (RFC 1945, May 1996) </li>
+               <li> HTTP 1.1 (RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014) </li>
+               <li> HTTP 2 (RFC 7540 May 2015, patterned after SPDY)</li>
+            </ul>
+			<p></p>
+         </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="HTTP2">HTTP Fundamentals</h2>
+         </header>
+            <ul class="default">
+               <li> Runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS) </li>
+               <li> Pre HTTP2 servers won’t volunteer data to clients. Client must request for the data before being given said data.</li>
+               <li> HTTP 2 follows the “push” protocol which allows servers to volunteer info based on client requests. </li>
+               </ul>
+               <details>
+                  <summary> HTTP is based on a client-server, architecture </summary>
+				  <p></p>
+                     <p>Clients (user agents UA): Web browsers, web crawlers/spiders, other end user tools and applications.</p>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> HTTP uses a request-response standard protocol </summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> The client sends an HTTP request message to the server</li>
+                     <li> The server processes the request and replies with an HTTP response message </li>
+                  </ul>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> HTTP is a stateless communications protocol </summary>
+				  <p></p>
+					 <p> Servers do not keep information about clients in-between requests. </p>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> HTTP provides support for other functionalities, such as:</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> Cache Control – to cache or not to cache (Locality of Reference – only use when needed).</li>
+                     <li> Content Media Type (MIME - Multipurpose Internet Mail Extensions) specification – no reliance on file name extension and can be opened regardless.</li>
+                     <li> Language and character set specification (Unicode/ASCII)</li>
+                     <li> Content/transfer Coding (byte by byte stream, compression up to 80-90%)</li>
+                     <li> Content Negotiation – agreement between handling of content by the server and the client (file type, language, compression)</li>
+                     <li> Client-server Protocol Negotiations (HTTP 1.0, 1.1 or 1.2)</li>
+                     <li> Persistent Connections – client retains connection to server after request and response have been sent and received.</li>
+                     <li> Request Pipelining – one requests at a time (wait for response).</li>
+                     <li> Authentication/authorization</li>
+                  </ul>
+				  <p></p>
+               </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h3 id="HTTP3">HTTP Resource Addressing</h3>
+         </header>
+            <ul class="default">
+               <li> Uniform Resource Name (URN) – does not matter where location is; check data availability. </li>
+               <li> Uniform Resource Locator (URL) – same as URN but also points out the location of the data.</li>
+               </ul>
+               <details>
+                  <summary> HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs</summary>
+                     <details>
+                        <summary> Scheme (HTTP or HTTPS protocols)</summary>
+						<p></p>
+						<ul class="default">
+							<p> Ex. http:// or https:// </p>
+						</ul>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Authority </summary>
+						<p></p>
+                        <ul class="default">
+                           <li> domain name (resolved to an IP address using DNS) of the server where the resource resides. </li>
+                           <li> Port number (optional) </li>
+                           <p> Ex. serverhere.com:8080 </p>
+                        </ul>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Path to resource (resolved relative to the document root on the server)</summary>
+						<p></p>
+                        <ul class="default">
+                           <li> May refer to a static or dynamic resource.</li>
+                           <p> Ex. /where/here/there.pdf </p>
+                        </ul>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Query</summary>
+						<p></p>
+                        <ul class="default">
+                           <li> Typically provided as key=value pairs, with ampersand (&) separators between key/value pairs..</li>
+                           <li> May be URL encoded.</li>
+                        </ul>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Fragment identifier</summary>
+						<p></p>
+                           <p> Denoted via a pound sign.</p>
+						<p></p>
+                     </details>
+					 <details>
+                        <summary> Complete URL example </summary>
+						<p></p>
+                           <p> http://serverhere.com:8080/where/here/there.pdf?here=school&stud=dudette#heading </p>
+                     </details>
+					 <p></p>
+                </details>
+     	</section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h3 id="HTTP4">HTTP Request Message</h3>
+         </header>
+		 <ul class="default">
+               <p> CRLF – Carrier Return and Line Field (used to note the termination of a line </p>
+            </ul>
+               <details>
+                  <summary> Request Line (CRLF - terminated line)</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> Method </li>
+                     <li> Request URI </li>
+                     <li> HTTP Protocol Versions </li>
+                  </ul>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Message Headers (general, request, and/or entity leaders)</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> HTTP 1.1 requires at least the Host request header to be provided </li>
+                     <li> Empty Line (CRLF) – done with headers</li>
+                     <li> Message Body (payload, optional)</li>
+                  </ul>
+				  <p></p>
+               </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h1 id="HTTP5">HTTP Response Message</h1>
+         </header>
+               <details>
+                  <summary> Status Line (CRLF - terminated line consisting of three space-separated values)</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> HTTP Protocol Version </li>
+                     <li> 3-Digit Status Code </li>
+                     <li> Reason Phrase </li>
+                  </ul>
+               </details>
+			   <p></p>
+               <ul class="default">
+               <li> Message Headers (general, request, and/or entity leaders)</li>
+               <li> Empty Line (CRLF) </li>
+               <li> Message Body (optional)</li>
+            </ul>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="HTTP6">HTTP Request Methods</h2>
+         </header>
+			<h3> Methods</h3>
+			<p></p>
+                  <details>
+                     <summary> GET</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Transfer a current selected representation of the resource identified by the Request URI; the retrieved resource is returned in the message of the response as an entity. </li>
+                        <li> Most commonly used HTTP method. </li>
+                        <li> Must be supported by all compliant general-purpose servers. </li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> HEAD</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Same as GET, except that the entity is not included in the response (returns only the status line and headers returned by a GET request, without the message body). </li>
+                        <li> Used to retrieve metadata about the entity implied by the request without transferring the entity itself (tests for link validity or resource modification).</li>
+                        <li> Like GET, must be supported by all general-purpose servers. </li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> POST</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li>Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the Request URI. </li>
+                        <li> Typically used in submitting HTML form data.</li>
+                        <li> Has a payload.</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> PUT</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Store the enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is either created or replaced, using the enclosed entity). </li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> DELETE</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Deletes the stored enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is deleted).</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> OPTION</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Request information about the communication. </li>
+                        <li> Asks the server, “What can I do?”</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> TRACE</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Request a loop-back of the request message (requests the server to echo back to the client the received request message). </li>
+                        <li> Typically used for teaching/diagnostics of the request/response shown.</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> CONNECT</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restricts its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed. </li>
+                        <li>Commonly used to create an end-to-end virtual connection.</li>
+                     </ul>
+					 <p></p>
+                  </details>
+				  <details>
+                     <summary> Safe Methods, Indempotent Methods, Cacheable Methods</summary>
+					 <p></p>
+                     <ol class="default">
+                        <li> Safe – no modification on server side after a request (GET, HEAD, OPTIONS, TRACE). </li>
+                        <li> Idempotent – results stay the same after multiple requests (GET HEAD, OPTIONS, TRACE).
+						<ul class="default">
+							<li> PUT – still expects new resources. </li>
+							<li> DELETE – no more resources to expect (remove). </li>
+						</ul>
+						</li>
+						<li> Cacheable – results are dependent on message headers. </li>
+                     </ol>
+					 <p></p>
+                  </details>
+               <details>
+                  <summary> Extension Methods </summary>
+				  <p></p>
+                  <ul class="default">
+                     <li>Web DAV (RFC 4918) </li>
+                     <li>PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+                  </ul>
+				  <p></p>
+               </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h3 id="HTTP7">HTTP Message Headers</h3>
+         </header>
+               <details>
+                  <summary> General Header Fields</summary>
+				  <p></p>
+                  <ol class="default">
+                     <li> Cache-Control - used to specify directives to be obeyed at all times by the website caching system (determines local data storage).</li>
+                     <li> Connection Date - used to specify settings for website connection and establish persistent connections. </li>
+                     <li> Date - used to specify the date (GMT) of the request.</li>
+                     <li> Pragma - HTTP 1.0 general directive. Pragma: no-cache is the only directive defined in HTTP 1.0 and maintained in 1.1.  </li>
+                     <li> Trailer - header at the end of the message instead of start.</li>
+                     <li> Transfer-Encoding - specifies the type of encoding done to the message to safely deliver it from the sender to the receiver.</li>
+                     <li> Upgrade - specifies conversion to a new protocol (http:// --> htpps://)</li>
+                     <li> Via - identity/Watermarking. Passes through proxy, like stamp identity, onto the next.</li>
+                     <li> Warning - identifier for encoding problems.</li>
+                  </ol>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Request Header Fields</summary>
+				  <p></p>
+                  <ol class="default">
+                     <li>Accept - used for content negotiations to be accepted.</li>
+                     <li>Accept-Charset - request for a specific character set (Unicode, ASCII, ANSI).</li>
+                     <li>Accept-Encoding - request for specific encoding (compression type).</li>
+                     <li>Accept-Language - request for specific language for the webpage (English, Japanese, French).</li>
+                     <li>Authorization - contains credentials of the request of the user-agent (authorization handshake).</li>
+                     <li>Expect - checks if the server can handle the request (triggers status code 100 or 417).</li>
+                     <li>From - email of the user-agent sending the request.</li>
+                     <li>Host - specifies the host and port of the requested resource. Virtualhost support. No host = bad request (400)</li>
+                     <li>If-Match - specifies request to be followed if the server resources matches the entity tag.</li>
+                     <li>If-Modified-Since - conditional request; if resource has not been modified since the given time, the resource is not returned.</li>
+                     <li>If-None-Match - conditional request; resource is only returned when the entity tag is matched.</li>
+                     <li>If-Range - specifies portions of the resource to be returned; resource is only returned when the specified range meets the request.</li>
+                     <li>If-Unmodified-Since - conditional request; server performs operation only if the resource has not been modified since the specified time.</li>
+                     <li>Max-Forwards - limits the number of proxies a trace will request go through (trace until 2nd/3rd proxy).</li>
+                     <li>Proxy-Authorization - authentication with a proxy as the middleman (identification of user-agent to a proxy).</li>
+                     <li>Range - specified partial range of content to be returned (bytes).</li>
+                     <li>Referrer - shows the link where the resource is from (URI).</li>
+                     <li>TE – trailer encoding; indicates the Transfer-Enoding to be accepted by the user agent.</li>
+                     <li>User-Agent - information about the sender of the request (name, compatibility, OS).</li>
+                  </ol>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Response Header Fields </summary>
+				  <p></p>
+                  <ol class="default">
+                     <li>Accept-Ranges - specifies the server’s acceptance of range requests for its resources.</li>
+                     <li>Age - informs the user-agent of how long since the response was generated by the server (how old the response is).</li>
+                     <li>ETag (Entity Tag) - identifier for the resource.</li>
+                     <li>Location - redirection of the request to the location of the resource.</li>
+                     <li>Proxy-Authenticate - part of the 407 status code response (user-agent is required authentication).</li>
+                     <li>Retry-After - part of the 503 status code response (sets time before the request can be made again).</li>
+                     <li>Server - server information (Apache, nginx).</li>
+                     <li>Vary - content negotiation; specified different sources of the entity.</li>
+                     <li>WWW-Authenticate - part of the 401 status code response (issues a challenge that indicates required authentication parameters).</li>
+                  </ol>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Entity Header Fields</summary>
+				  <p></p>
+                  <ol class="default">
+                     <li>Allow - specifies operations that can be done on an entity (PUT, POST, DELETE, etc.)</li>
+                     <li>Content-Encoding - indicates encoding of media type (gzip).</li>
+                     <li>Content-Language – indicates the intended language of the resource.</li>
+                     <li>Content-Length - indicates the length of the resource (bytes).</li>
+                     <li>Content-Location – indicates the location of the resource, where it’s from.</li>
+                     <li>Content-MD5(Message Digest) - hashing: change in data is a change in hash </li>
+                     <li>Content-Range - indicates the range of bytes; resource is sent partially to specify where it belongs in full resource body.</li>
+                     <li>Content-Type - indicates the extension of the resource (.html, .css, .jpg, .gif, etc.).</li>
+                     <li>Expires - indicates how long the user-agent can keep the content in the cache.</li>
+                     <li>Last-Modified - indicates when the resource was last changed.</li>
+                  </ol>
+				  <p></p>
+               </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <header>
+         <h3 id="HTTP8">HTTP Status Codes</h3>
+         <p>The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role. </p>
+      </header>
+      <section>
+         <details>
+            <summary>Informational (1xx)</summary>
+            <p>It means the request has been received and the process is continuing.</p>
+            <ol class="default">
+               <li>100 Continue – the user agent should continue with the request.</li>
+               <li>101 Switching Protocols – can upgrade protocol then send; the server will switch protocol to those defined by the response’s upgrade header field immediately.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Success (2xx)</summary>
+            <p>It means the action was successfully received, understood, and accepted.</p>
+            <ol class="default">
+               <li>200 Ok – most common; indicates that the user-agent request was received. </li>
+               <li>201 Created – submitted via PUT; the request has been accepted and a new resource has been created.</li>
+               <li>202 Accepted – the request has been submitted/accepted but not yet fully processed; the request may or may not be acted upon by the server.</li>
+               <li>203 Non-Authoritative Information – the meta information may not be the definitive one available from the server; it is not required and is only appropriate when the response would be 200 otherwise.</li>
+               <li>204 No Content – the request has been submitted but does not return anything; primarily used to allow for user agent input without modifying the document view (new meta data is still applied to the document, if there are any).</li>
+               <li>205 Reset Content – the request has been submitted and the server side agent is to reset the document view for the user agent.</li>
+               <li>206 Partial Content – a partial GET request for a resource has been submitted.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Redirection (3xx)</summary>
+            <p>It means further action must be taken in order to complete the request.</p>
+            <ol class="default">
+               <li>300 Multiple Choices – there are multiple representations of the resource and the user agent is provided with a choice and is redirected accordingly.</li>
+               <li>301 Moved Permanently – the request has been moved to a new permanent URI; resource references are pointed towards the new URI. </li>
+               <li>302 Found – the resource is in a temporary URI; alteration of the location is a possibility and the user agent is alerted of such. </li>
+               <li>303 See Other – the response to a request is under a different URI; allows for the redirection of the user agent to the selected resource.</li>
+               <li>304 Not Modified – request has been submitted and accepted; document has not been modified and indicates that the resource entity is not cached.</li>
+               <li>305 Use Proxy – redirection to indicate that the resource is to be accessed through a proxy.</li>
+               <li>306 – no longer used.</li>
+               <li>307 Temporary Redirect – the client is redirected temporarily to a URI before going to the resource location.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Client Error (4xx)</summary>
+            <p>It means the request contains incorrect syntax or cannot be fulfilled.</p>
+            <ol class="default">
+               <li>400 Bad Request – the user agent is not understood by the server; usually a URL syntax error (typos, misspellings or such).</li>
+               <li>401 Unauthorized – user agent authorization has been refused by the server due to request credentials not matching set authentication standards.</li>
+               <li>402 Payment Required – not used; reserved for future use.</li>
+               <li>403 Forbidden – user agent request is understood but not granted; the server does not wish to make the information available.</li>
+               <li>404 Not Found – a matching request URI has not been found by the server; used when no response is applicable or if the server wishes to withhold information about the request refusal.</li>
+               <li>405 Method Not Allowed – the method specified is not allowed for the requested resource.</li>
+               <li>406 Not Acceptable – the resource generates unacceptable content characteristics based off the Accept headers of the request and is not returned.</li>
+               <li>407 Proxy Authentication Required – indicates the requirement of the user agent to authenticate with the proxy before resource access.</li>
+               <li>408 Request Time-out – the user agent is unable to make a request within a set time limit by the server.</li>
+               <li>409 Conflict – the user agent request is in conflict with the resource (most likely PUT requests); only returned when the user agent is capable of resolving the conflict.</li>
+               <li>410 Gone – the requested resource is completely unavailable and no longer in the server (no redirection; no addresses to be forwarded to).</li>
+               <li>411 Length Required –the user agent failed to specify the length of the resource to be returned in accordance with the server’s Content-Length header.</li>
+               <li>412 Precondition Failed – preconditions may be set by user agents to apply to the requested resource; response code is returned if the precondition set is evaluated as false.</li>
+               <li>413 Request Entity Too Large – the requested resource is larger than what the server is expected to handle; can be the inability of the server to process a response or a set limitation of resource size.</li>
+               <li>414 Request-URI Too Long – the requested resource URI is longer than what the server is expected to handle.</li>
+               <li>415 Unsupported Media Type – the requested resource media format is unsupported by the actual resource in the server.</li>
+               <li>416 Request Range Not Satisfiable – the Accept-Range of the request is not in match with the range set by the server standards.</li>
+               <li>417 Expectation Failed – paired with the Expect request header and is returned when the server is unable to handle the request.</li>
+               <li>426 Upgrade Required – the request may be accepted by the server is the user agent switches to a different protocol.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Server Error (5xx)</summary>
+            <p>It means the server failed to fulfill an apparently valid request.</p>
+            <ol class="default">
+               <li>500 Internal Server Error – the server has encountered an unexpected error and the user agent request is dropped.</li>
+               <li>501 Not Implemented – the server is lacking the functionality to fulfill the user agent request.</li>
+               <li>502 Bad Gateway – gateway/proxy error; invalid response from an upper connection to the server and the latter is unable to fulfill the request.</li>
+               <li>503 Service Unavailable – the server is under maintenance or overloading and is unable to process the user agent request.</li>
+               <li>504 Gateway Time-out – gateway/proxy error; untimely response from an upper connection to the server and the latter is unable to fulfill the request.</li>
+               <li>505 HTTP Version Not Supported – the server is unable to process the request due to refusal or inability to support the HTTP protocol version specified.</li>
+            </ol>
+			<p></p>
+         </details>
+      </section>
+   </article>
+
+   <section id="footer">
+      <ul class="copyright">
+         <li>&copy; 9355A Webtek Lecture | </li>
+		 <li> Template Design: <a href="http://html5up.net"> HTML5 UP</a></li>
+      </ul>
+   </section>
+</body>
+
+</html>
+
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
