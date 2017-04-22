@@ -742,10 +742,34 @@
 	</details>
    </article>
    
-   <article class="container box style3">
-	<details>
-		<summary> CSS Rule Precedence </summary>
-	</details>
+  <article class="container box style3">
+		<header> 
+		<h2> CSS Rule Precedence </h2>
+		</header>
+		<details>
+			<summary>By origin and importance</summary>
+			<ul class="default">
+				<li>User agent important declarations</li>
+				<li>user important declarations</li>
+				<li>author important declarations</li>
+				<li>author normal declarations</li>
+				<li>user normal declarations</li>
+				<li>user agent normal declarations</li>
+			</ul>
+		</details>
+		<details>
+			<summary>By specificity</summary>
+			<ul class="default">
+				<li>inline style</li>
+				<li>number of ID selector</li>
+				<li>number of class selectors, attribute selectors and pseudo-classes</li>
+				<li>number of type selectors and pseudo-elements</li>
+			</ul>	
+		</details>
+		<ul class="default">
+		<li>By order</li>
+		</ul>
+		
    </article>
 
 	<!--Sources-->
