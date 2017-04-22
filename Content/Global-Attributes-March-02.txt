@@ -3,55 +3,52 @@ Global attributes
 HTML Attributes:
 Global
 Element_Specific
-data -*
-role, aria -*
-  -----
-WAI-ARIA, WCAG 2.0
 
-HTML Elements:
+HTML Elements: 
+HTML
+	Head – a container for metadata which provides information for the document that includes:
+•	Title – it specifies the title of the document
+•	Base – it specifies the base URLS for the document
+•	Link – used to link the stylesheet to the HTML
+•	Meta – represents metadata that cannot be represented by other HTML meta-related elements
+•	Style – contains style for the document
 
-html
- head
-	title, base, link, meta, style
- body
-	article, aside, max, section
-	header, footer
-	main (main content)
-	address (contact information)
-	div (generic divider for block elements)
+	Body – an element that contains the content of the HTML document
+•	Article, aside, max, section
+•	Header – contains some of the heading elements for introductory
+•	Footer – contains the footer for the sectioning root element of the HTML
+•	Main – contains the main content
+•	Address – content information
+•	div – generic divider for block elements
 
-	h1, h2, h3, h4, h5, h6 (6 levels of headings)
+•	h1, h2, h3, h4, h5, h6 – six levels of headings
 
-	p
-	hr (horizontal line)
-	pre (preformatted text)
-	blockquote (for quotations)
-
-	ol, ul (ordered list, unordered list)
-		li (description list)
-	dl
-		dt, dd
-
-	figure
-		figcaption
-
-	a
-	em, strong, small, s
-	cite, q
-	dfn, abbr (defining instance, abbreviation)
-	ruby, rb, rt, rtc, rp (ruby annotations)
-	data, time
-	code, var, samp, kbd
-	sup, sub
-	i, b, u, mark
-	bdi, bdo (bidirectional text)
-	span (generic divider for inline elements)
-	br, wbr
-	ins, del (document insertion and deletion)
-
-	table
-		caption
-		colgroup, col
-		thead, tbody, tfoot
-		   tr
-			th, td
+•	p – represents block of texts or paragraph 
+•	hr – horizontal line
+•	pre – preformatted text
+•	blockquote – for quotations
+•	ol, ul – ordered list, unordered list
+•	li – description list
+•	dl, dt, dd – these represent, identify description for lists
+•	figure – represents self-contained content
+•	figcaption – represents a caption or a legend associated with a figure
+•	a – anchor element, creates a hyperlink to other URLS, files, or page
+•	em, strong, small, s 
+•	cite, q - must include the title of a work or a URL reference
+•	dfn, abbr – defining instances, abbreviation
+•	ruby, rb, rt, rtc, rp (ruby annotations)
+•	data, time – these elements attributes include the global attributes.
+•	code, var, samp, kbd
+•	sup, sub
+•	I, b, u, mark
+•	bdi, bdo – bidirectional text
+•	span – generic divider for inline elements
+•	br, wbr
+•	ins, del – document insertion and deletion
+		
+•	table – represents tabular data
+o	caption
+o	colgroup, col
+o	thead, tbody, tfoot
+o	tr
+o	th, td
