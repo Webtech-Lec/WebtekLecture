@@ -88,12 +88,13 @@
    <!-- Prelim Notes-->
    <div class="emptyblock"></div>
 
-   <section class="banner">
+ <div class="emptyblock"></div>
+   <section class="banner" onclick="myFunctionP()">
       <header>
          <h2>Prelims</h2>
       </header>
-      <p> Second Semester | 2017 </p>
    </section>
+    <div id="PRELIMS">
 
    <article class="container box style3">
       <section>
@@ -597,17 +598,17 @@
          </details>
       </section>
    </article>
-
+</div>
+	    
    <!--Midterm Notes-->
    <div class="emptyblock"></div>
-   
-   <section class="banner">
+   <section class="banner" onclick="myFunctionM()">
       <header>
          <h2>Midterms</h2>
       </header>
-      <p> Second Semester | 2017 </p>
-   </section>
-   
+   </section> 
+   <div id="Midterms">
+	   
    <article class="container box style3">
    <section>
       <header> HTML </header>
@@ -892,9 +893,25 @@
       <ul class="default">
       <li>By order</li>
       </ul>
-      
    </article>
-   
+   </div>
+
+<div class="emptyblock"></div>  
+<section class="banner" onclick="myFunctionF()">
+      <header>
+         <h2>FINALS</h2>
+      </header>
+   </section>
+<div id="Finals">
+  <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="Def1"> Underconstruction </h2>
+         </header>
+         </details>
+   </article>
+</div>	  
+	  
    <article class="container box style3">
       <details>
 		<summary> Sources </summary>
@@ -913,6 +930,36 @@
 		 <li> Template Design: <a href="http://html5up.net"> HTML5 UP</a></li>
       </ul>
    </section>
+	  
+  <script> //Drop Down
+      //prelim
+      function myFunctionP() {
+          var x = document.getElementById('PRELIMS');
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
+      //midterms
+      function myFunctionM() {
+          var x = document.getElementById('Midterms');
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
+      //finals
+      function myFunctionF() {
+          var x = document.getElementById('Finals');
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
+   </script>
 </body>
 
 </html>
