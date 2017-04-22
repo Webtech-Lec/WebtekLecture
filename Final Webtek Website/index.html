@@ -736,10 +736,133 @@
 			
    </article>
    
-   <article class="container box style3">
-	<details>
-		<summary> CSS Selectors </summary>
-	</details>
+  <article class="container box style3">
+		<header>
+		<h2>CSS Selectors<h2>
+		</header>
+		
+			<details>
+			<summary> Selectors </summary>
+				<ol class="default">
+					<li>Structure used as a condition in a CSS rule to determine which elements in the 
+					documentation tree are matched by the selector and are thus targeted by the formatting
+					specified in the CSS rule declaration block.</li>
+					<li>The matched elements are called the subjects of the selector</li>
+				</ol>
+			</details>
+			
+			<details>
+			<summary> Selector syntax </summary>
+				<ol class="default">
+					<li>Chain of one or more sequences of simple selectors separated by combinators, 
+					with one pseudo-element possibly appended to the last sequence.
+					<p>Example: div #abc> p.xyz[title]+span:first child::after</p>
+					<p> > , + = contributor </p>
+					<p> After = pseudo-element</p>
+					<p>Span:first child::after = pseudo-class</p>
+					</li>
+					<li>Sequence of simple selectors
+						<ul class="default">
+							<li>Chain of simple selectors not separated by combinators</li>
+							<li>Always starts with a type sector or a universal selector</li>
+							<li>Cannot contain other type selectors or universal selectors</li>
+						</ul>
+					</li>
+					<li>Group of selectors
+					<ul class="default">
+						<li>Coma-separated list of selectors representing the union of all elements (e.g h1, h2, h3)</li>
+					</ul></li>
+				</ol>
+			</details>
+			
+			<details>
+			<summary> Simple Selectors </summary>
+				<ol class="default">
+					<li>Type selector (p, div, span)</li>
+					<li>Universal selector (*)</li>
+					<li>Attribute selector
+						<ul class="default">
+							<li>[attr]</li>
+							<li>[attr=value]</li>
+							<li>[attr~=value](class attribute)</li>
+							<li>[attr|=value](language attribute)</li>
+							<li>[attr^=value](start CSS3)</li>
+							<li>[attr$=value](end CSS3)</li>
+							<li>[attr*=value](anywhere in between CSS3)</li>
+						</ul></li>
+					<li>Class selector</li>
+					<li>ID selector</li>
+					<li>Pseudo-selector
+						<ul class="default">
+							<li>Dynamic Pseudo-class
+								<ol class="default">
+									<li>link pseudo-class
+										<ul class="default">
+											<li>:link</li>
+											<li>:visited</li>
+										</ul></li>
+									<li>user action pseudo-class
+										<ul class="default">
+											<li>:hover</li>
+											<li>:active</li>
+											<li>:focus</li>
+										</ul></li>
+									<li>target pseudo-class
+									<ul class="default">
+											<li>:target(CSS3)</li>
+										</ul></li>
+									<li>language pseudo-class
+									<ul class="default">
+											<li>:lang()</li>
+										</ul></li>
+									<li>UI element states pseudo-class
+									<ul class="default">
+											<li>:enabled (CSS3)</li>
+											<li>:disable (CSS3)</li>
+											<li>:checked(CSS3)</li>
+											<li>:indeterminate(CSS3)</li>
+										</ul></li>
+									<li>structural pseudo-class
+									<ul class="default">
+											<li>:root</li>
+											<li>:first-child</li>
+											<li>:last-child</li>
+											<li>:only-child</li>
+											<li>:nth-child()</li>
+											<li>:nth-last-child</li>
+											<li>:first-of-type</li>
+											<li>:last-of-type</li>
+											<li>:only-of-type</li>
+											<li>:nth-of-type()</li>
+											<li>:nth-last-of-type()</li>
+											<li>:empty</li>
+										</ul></li>
+									<li>Negation
+									<ul class="default">
+											<li>:not (CSS3)</li>
+									</ul></li>
+								</ol></li>
+						</ul></li>
+					<li>Combinators
+						<ul class="default">
+							<li>descendant combinator (whitespace ie space, tab, line feed, carriage return, form feed)</li>
+							<li>child combinator(>)</li>
+							<li>sibling combinators
+								<ul class="default">
+									<li>adjacent sibling combinator(+)</li>
+									<li>general sibling combinator(~) CSS3</li>
+								</ul></li>
+						</ul></li>
+
+					<li>Pseudo-elements
+						<ul class="default">
+							<li>::first-letter ,:first-letter</li>
+							<li>::first-line ,:first-line</li>
+							<li>::before ,:before</li>
+							<li>::after ,:after</li>
+						</ul></li>
+				</ol>
+			</details>	
    </article>
    
   <article class="container box style3">
