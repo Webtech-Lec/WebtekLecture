@@ -1,0 +1,57 @@
+Global attributes
+-----------------
+HTML Attributes:
+Global
+Element_Specific
+data -*
+role, aria -*
+  -----
+WAI-ARIA, WCAG 2.0
+
+HTML Elements:
+
+html
+ head
+	title, base, link, meta, style
+ body
+	article, aside, max, section
+	header, footer
+	main (main content)
+	address (contact information)
+	div (generic divider for block elements)
+
+	h1, h2, h3, h4, h5, h6 (6 levels of headings)
+
+	p
+	hr (horizontal line)
+	pre (preformatted text)
+	blockquote (for quotations)
+
+	ol, ul (ordered list, unordered list)
+		li (description list)
+	dl
+		dt, dd
+
+	figure
+		figcaption
+
+	a
+	em, strong, small, s
+	cite, q
+	dfn, abbr (defining instance, abbreviation)
+	ruby, rb, rt, rtc, rp (ruby annotations)
+	data, time
+	code, var, samp, kbd
+	sup, sub
+	i, b, u, mark
+	bdi, bdo (bidirectional text)
+	span (generic divider for inline elements)
+	br, wbr
+	ins, del (document insertion and deletion)
+
+	table
+		caption
+		colgroup, col
+		thead, tbody, tfoot
+		   tr
+			th, td
