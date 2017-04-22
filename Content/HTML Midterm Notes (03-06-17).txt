@@ -9,7 +9,7 @@ Cascading Style Sheets (CSS)
 	Sass, Less, 960 Grid System, Bootstrap, Foundation, Materialize, etc.
 
 HTML/XHTML Stylesheets
-- author styles
+- author styles - stylesheets included in the website
 	> external stylesheets (recommended)
 		uses the link element
 		(ref, type, href, media, title
@@ -18,18 +18,18 @@ HTML/XHTML Stylesheets
 		responsive design
 		for quick prototyping
 	> inline styles
-- user agent styles (example default CSS 2.1 stylesheet for HTML 4)
+- user agent styles (example default CSS 2.1 stylesheet for HTML 4) - default stylesheet of the browser
 
 CSS Statements
 - At-Rules
-	@charset
-	@import
-	@media
-	@font-face (define and download webfonts)
-	@keyframes (keyframe animation)
-	@page
+	@charset - defines the character enciding used in the stylesheet
+	@import - used to import style rules to other stylesheets
+	@media - for sets of nested statements
+	@font-face - define and download webfonts
+	@keyframes - keyframe animation
+	@page - used to modify when printing a document
 - CSS Rule Sets (aka CSS Rules, Style Rules)
-	consists of a selector, followed by a brace-enclosed declaration block ______
+	consists of a selector, followed by a brace-enclosed declaration block 
 	e.g.  *body is the selector
 		body {
 		  display: none;
