@@ -1,33 +1,128 @@
-03/06/17
-Cascading Style Sheet(CSS)
-•	Language used to specify the presentation aspects (layouts and formatting) of structurally marked up languages
-•	Developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)
-•	Versions:
-o	CSS 1
-o	CSS 2.1 (June 2011)
-o	CSS 3
-•	CSS Preprocessors, CSS Frameworks
-o	SASS, Less, 950 Grid Sytem, Bootstrap, Foundation, Materialize, etc.
-HTML/XHTML Styles Sheets
-•	Author styles
-o	External
-o	Embedded styles
-o	Inline styles
-•	User styles
-•	User agent styles (example default CSS 2.1 stylesheet for html 4)
-CSS Statements
-•	At-Rules
-o	@charset
-o	@import
-o	@media
-o	@font-face
-o	@keyframe
-o	@page
-•	CCS Rule Sets (aka CSS Rules, Style Rules)
-o	Consist of a selector, followed by a brace-enclosed /**/
-CSS Selectors
-•	Selector
-o	Structure used as a condition in a CSS Rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting
-•	Selector Syntax
-o	Chain of one or more sequence of simple selectors separated by combinators with one pseudo-element possibly appended to the last sequence
+Cascading Style Sheets (CSS)
+- language used to specify the presentation aspects (e.g. layout and formatting) of structurally marked up documents
+- developed by Hakom Wium Lie (CHSS) and Bert Bos (SSP)
+- Versions:
+	CSS 1 (December 1996)
+	CSS 2.1 (June 2011)
+	CSS 3
+- CSS Preprocessors, CSS Frameworks
+	Sass, Less, 960 Grid System, Bootstrap, Foundation, Materialize, etc.
 
+HTML/XHTML Stylesheets
+- author styles
+	> external stylesheets (recommended)
+		uses the link element
+		(ref, type, href, media, title
+		*alternate stylesheet supported in firefox
+	> embedded styles
+		responsive design
+		for quick prototyping
+	> inline styles
+- user agent styles (example default CSS 2.1 stylesheet for HTML 4)
+
+CSS Statements
+- At-Rules
+	@charset
+	@import
+	@media
+	@font-face (define and download webfonts)
+	@keyframes (keyframe animation)
+	@page
+- CSS Rule Sets (aka CSS Rules, Style Rules)
+	consists of a selector, followed by a brace-enclosed declaration block ______
+	e.g.  *body is the selector
+		body {
+		  display: none;
+		  color: blue;
+		}
+
+CSS Selectors
+- selector
+	> structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector and are thus targeted by the formatting specified in the CSS rule declaration block
+	> the matched elements are called the subjects of the selector ___
+- selector syntax
+	> chain of one or more sequences of simple selectors separated by combinators, with one pseudo-element possibly appended to the last sequence
+	     example: div #abc > p.xyz[title] + span:first_child::after
+		>, + = contributor
+		after = pseudo-element
+		span:first_child::after = pseudo-class
+	> sequence of simple selectors
+		- chain of simple selectors not separated by combinators
+		- always starts with a type selector or a universal selector
+		- cannot contain other type selectors or universal selectors
+	> group of selectors
+		- comma - separated list of selectors representing the union of all elements selected by each of the selectors in the list
+		e.g. h1, h2, h3
+- simple selectors
+	> type selector (p, div, span)
+	> universal selector (*)
+	> attribute selector
+		[attr]
+		[attr=value]
+		[attr~=value] (class attribute)
+		[attr|=value] (language attribute)
+		[attr^=value] (start CSS3)
+		[attr$=value] (end CSS3)
+		[attr*=value] (anywhere in between CSS3)
+	> class selector (<p class="xyz">)
+	> ID selector (<div id="abc"> *for ID attribute)
+	> pseudo-selector
+		- dynamic psuedo-class
+		   link pseudo-classes
+			:link
+			:visited
+		   user action pseudo-classes
+			:hover
+			:active
+			:focus
+		- target pseudo-class
+			:target (CSS3)
+		- language pseudo-class
+			:lang()
+		- UI element states psedo-class
+			:enabled (CSS3)
+			:disabled (CSS3)
+			:checked (CSS3)
+			:indeterminate (CSS3)
+		- structural pseudo-class
+			:root
+			:first-child
+			:last-child
+			:only-child
+			:nth-child()
+			:nth-last-child
+			:first-of-type
+			:last-of-type
+			:only-of-type
+			:nth-of-type()
+			:nth-last-of-type()
+			:empty
+		    *all CSS3 except first-child
+		- negation
+			:not (CSS3)
+	> combinators
+		- descendant combinator (whitespace ie space, tab, line feed, carriage return, form feed)
+		- child combinator (>)
+		- sibling combinators
+			adjacent sibling combinator (+)
+			general sibling combinator (~) CSS3
+	> pseudo-elements
+		::first-letter	, :first-letter
+		::first-line	, :first-line
+		::before	, :before
+		::after		, :after
+
+CSS Rule Precedence
+	> by origin and importance
+		user agent important declarations
+		user important declarations
+		author important declarations
+		author normal declarations
+		user normal declarations
+		user agent normal declarations
+	> by specificity
+		inline style
+		number of ID selectors
+		number of class selectors, attribute selectors and pseudo-classes
+		number of type selectors and pseudo-elements
+	> by order
