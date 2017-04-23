@@ -64,6 +64,11 @@ o	Embedded Styles
 	For quick prototyping
 o	Inline styles
 -	User agent styles (example default CSS 2.1 stylesheets for HTML 4)
+Style sheets may have three different origins: author, user, and user agent.
+	Author. The author specifies style sheets for a source document according to the conventions of the document language. For instance, in HTML, style sheets may be included in the document or linked externally.
+	User: The user may be able to specify style information for a particular document. For example, the user may specify a file that contains a style sheet or the user agent may provide an interface that generates a user style sheet (or behaves as if it did).
+	User agent: Conforming user agents must apply a default style sheet (or behave as if they did). A user agent's default style sheet should present the elements of the document language in ways that satisfy general presentation expectations for the document language (e.g., for visual browsers, the EM element in HTML is presented using an italic font). Style sheets from these three origins will overlap in scope, and they interact according to the cascade.
+	
 CSS Statements
 -	At - Rules
 @charset
@@ -161,11 +166,6 @@ CSS Rule Precedence
 >by origin and importance
 //ADDED
 -Resource: https://www.w3.org/TR/CSS2/cascade.html
-Style sheets may have three different origins: author, user, and user agent.
-	Author. The author specifies style sheets for a source document according to the conventions of the document language. For instance, in HTML, style sheets may be included in the document or linked externally.
-	User: The user may be able to specify style information for a particular document. For example, the user may specify a file that contains a style sheet or the user agent may provide an interface that generates a user style sheet (or behaves as if it did).
-	User agent: Conforming user agents must apply a default style sheet (or behave as if they did). A user agent's default style sheet should present the elements of the document language in ways that satisfy general presentation expectations for the document language (e.g., for visual browsers, the EM element in HTML is presented using an italic font). Style sheets from these three origins will overlap in scope, and they interact according to the cascade.
-	
 	Sort according to importance (normal or important) and origin (author, user, or user agent). In ascending order of precedence:
 o	user agent important declarations
 o	user important declarations
@@ -179,6 +179,35 @@ o	number of ID selectors
 o	number of class selectors, attribute selectors and pseudo-classes
 o	number of type selectors and pseudo-elements
 	by order
+
+CSS Declarations
+	Properties
+		-shorthand properties
+			- initial	(non-inheritable, global keyword)
+			- inherit	(inheritable)     
+ 			- unset	    (inheritable, non-inheritable)
+			- revert	(global keyword)	
+		-vendor-specific extensions 
+			- also known as vendor prefixes
+	B. Values
+		- keywords
+		- numbers (integers and reals in decimal notation)
+		- dimensions
+			- length, angle, duration, frequency, resolution
+			- length units:
+				- font-relative: em ex ch rem
+				- viewport-percentage: vw vmin vmax
+				- absolute lengths: cm mm q in pt pc px
+			- angle units: deg grad rad turn
+			- duration units: s ms
+			- frequency units: hz khz
+			- resolution units: dpi dpcm dppx
+		- percentages
+		- URLs and URIs
+		- colors
+		- strings
+		- functions: calc() attr() counter() counters() linear-gradient() radial-gradient() translate() scale() rotate() etc.
+
 JAVASCRIPT SRC= https://developer.mozilla.org/en-US/docs/Web/JavaScript
 JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as node.js and Apache CouchDB. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.
 	<scrip type=’text/javascript’ scr=script.js>
