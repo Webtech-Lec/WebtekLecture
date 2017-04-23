@@ -40,9 +40,7 @@
    </section>
 
    <!-- Prelims Nav-->
-   <article id="first" class="container box style1 right">
-      <a href="#" class="image fit"><img src="images/pic01.jpg" alt="" />
-      </a>
+   <article id="first" class="container box style1">
       <div class="inner">
          <header>
             <h2 id="prelims">Preliminaries</h2>
@@ -63,8 +61,6 @@
    
    <!-- Midterms Nav -->
    <article class="container box style1">
-      <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" />
-      </a>
       <div class="inner">
          <header>
             <h2 id="midterms">Mid-Semester</h2>
@@ -82,14 +78,13 @@
             <a href="#global">The Global Object | </a>
             <a href="#JS-Scope">JavaScript Scope | </a>
             <a href="#JM">JavaScript Methods| </a>
+            <a href="#JSON">JSON | </a>
          </p>
       </div>
    </article>
    
    <!-- Finals Nav-->
    <article class="container box style1">
-      <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" />
-      </a>
       <div class="inner">
          <header>
             <h2 id="finals">Finals</h2>
@@ -1001,6 +996,17 @@
                <p>JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as node.js and Apache CouchDB. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
                <li>The < script > tag is used to define a client-side script (JavaScript).</li>
                <li>The < script > element either contains scripting statements, or it points to an external script file through the src attribute.</li>
+               <details><summary>Between SCRIPT Tags</summary>Instead of specifying a src attribute, you can write javascript between the <script> and </script> tags.</details>
+               <details><summary>Inline in the HTML</summary>
+               Normally the HTML event attributes are used to call functions specified elsewhere in script tags. In rare cases you may wish to add the javascript code directly to these onClick or onMouseOver event tags, but this is not consdered good design.</details>
+               <details><summary>External Script</summary>
+               There are several ways an external script can be executed:
+               <ul class="default">
+                  <li>If async="async": The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)</li>
+                  <li>If async is not present and defer="defer": The script is executed when the page has finished parsing</li>
+                  <li>If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page.</li>
+
+               </ul>
    </article>
 
  <article class="container box style3">
@@ -1081,6 +1087,35 @@
          </header>
          <p>JavaScript methods are the actions that can be performed on objects and a JavaScript method is a property containing a function definition</p>
       </article>
+
+   <article class="container box style3">
+      <header> 
+      <h2 id="JSON"> JSON </h2>
+      </header>
+      <p>JSON is a format for storing and transporting data. JSON is often used when data is sent from a server to a web page.</p>
+      <details>
+            <summary>What is JSON?</summary>
+              <ul class="default">
+                  <li>JSON stands for JavaScript Object Notation</li>
+                  <li>JSON is lightweight data interchange format</li>
+                  <li>JSON is "self-describing" and easy to understand</li>
+                  <li>JSON is language independent *</li>
+                  <li>* The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. Code for reading and generating JSON data can be written in any programming language.</li>
+              </ul>
+      </details>
+
+      <p>The JSON Format Evaluates to JavaScript Objects The JSON format is syntactically identical to the code for creating JavaScript objects. Because of this similarity, a JavaScript program can easily convert JSON data into native JavaScript objects.</p>
+      <details>
+         <summary>JSON Syntax Rules</summary>
+           <ul class="default">
+                  <li>Data is in name/value pairs</li>
+                  <li>Data is separated by commas</li>
+                  <li>Curly braces hold objects</li>
+                  <li>Square brackets hold arrays</li>
+           </ul>
+      </details>
+   </article>
+
    </div>
 
 
