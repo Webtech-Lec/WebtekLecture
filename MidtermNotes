@@ -214,7 +214,11 @@ JavaScript (JS) is a lightweight interpreted or JIT-compiled programming languag
 SRFC= https://www.w3schools.com/tags/tag_script.asp
 The <script> tag is used to define a client-side script (JavaScript).
 The <script> element either contains scripting statements, or it points to an external script file through the src attribute.
-Internal Script:
+Between SCRIPT Tags
+Instead of specifying a src attribute, you can write javascript between the <script> and </script> tags. 
+Inline in the HTML
+Normally the HTML event attributes are used to call functions specified elsewhere in script tags. In rare cases you may wish to add the javascript code directly to these onClick or onMouseOver event tags, but this is not consdered good design.
+
 External Script:
 There are several ways an external script can be executed:
 •	If async="async": The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)
