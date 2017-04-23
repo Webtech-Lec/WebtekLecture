@@ -192,3 +192,69 @@ There are several ways an external script can be executed:
 •	If async is not present and defer="defer": The script is executed when the page has finished parsing
 •	If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page
 
+Variables
+Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to call it:
+	var myVariable;
+
+Note that variables have different data types:
+>	String
+A sequence of text known as a string. To signify that the variable is a string, you should enclose it in quote marks.	
+	var myVariable = 'Bob';
+	
+>	Number
+A number. Numbers don't have quotes around them.	
+	var myVariable = 10;
+
+>	Boolean
+A True/False value. The words true and false are special keywords in JS, and don't need quotes.	
+	var myVariable = true;
+
+>	Array
+A structure that allows you to store multiple values in one single reference.	var myVariable = [1,'Bob','Steve',10];
+Refer to each member of the array like this:
+	myVariable[0], myVariable[1], etc.
+
+>	Object
+Basically, anything. Everything in JavaScript is an object, and can be stored in a variable. Keep this in mind as you learn.	
+	var myVariable = document.querySelector('h1');
+
+
+Both let and const create variables that are block-scoped – they only exist within the innermost block that surrounds them.
+Let -declared variable tmp only exists inside the then-block of the if statement:
+In contrast, var-declared variables are function-scoped.
+const creates immutable variables  
+•	Variables created by let are mutable:
+•	Variables created by const, constants, are immutable:
+Note that const does not affect whether the value of a constant itself is mutable or not: If a constant refers to an object, it will always refer to that object, but the object itself can still be changed (if it is mutable).
+The global object  
+
+JavaScript’s global object (window in web browsers, global in Node.js) is more a bug than a feature, especially with regard to performance. That’s why it’s not surprising that ES6 introduces a distinction:
+
+All properties of the global object are global variables. In global scope, the following declarations create such properties:
+•	var declarations
+•	Function declarations
+But there are now also global variables that are not properties of the global object. In global scope, the following declarations create such variables:
+•	let declarations
+•	const declarations
+•	Class declarations
+
+JAVASCRIPT SCOPE
+	In JavaScript, objects and functions are also variables.
+In JavaScript, scope is the set of variables, objects, and functions you have access to.
+JavaScript has function scope: The scope changes inside functions.
+
+•	Local JavaScript Variables
+Variables declared within a JavaScript function, become LOCAL to the function. 
+Local variables have local scope: They can only be accessed within the function.
+•	Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+•	Local variables are created when a function starts, and deleted when the function is completed.
+
+•	Global JavaScript Variables
+A variable declared outside a function, becomes GLOBAL.
+A global variable has global scope: All scripts and functions on a web page can access it.
+•	Automatically Global
+If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+
+•	Global Variables in HTML
+With JavaScript, the global scope is the complete JavaScript environment.
+In HTML, the global scope is the window object. All global variables belong to the window object.
