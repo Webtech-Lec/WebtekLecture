@@ -287,3 +287,27 @@ If you assign a value to a variable that has not been declared, it will automati
 •	Global Variables in HTML
 With JavaScript, the global scope is the complete JavaScript environment.
 In HTML, the global scope is the window object. All global variables belong to the window object.
+
+JavaScript Methods
+JavaScript methods are the actions that can be performed on objects and a JavaScript method is a property containing a function definition.
+
+Javascipt JSON
+JSON is a format for storing and transporting data. JSON is often used when data is sent from a server to a web page.
+
+What is JSON?
+•	JSON stands for JavaScript Object Notation
+•	JSON is lightweight data interchange format
+•	JSON is language independent *
+•	JSON is "self-describing" and easy to understand
+* The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. Code for reading and generating JSON data can be written in any programming language.
+
+The JSON Format Evaluates to JavaScript Objects The JSON format is syntactically identical to the code for creating JavaScript objects. Because of this similarity, a JavaScript program can easily convert JSON data into native JavaScript objects.
+
+JSON Syntax Rules
+Data is in name/value pairs
+Data is separated by commas
+Curly braces hold objects
+Square brackets hold arrays
+
+
+
