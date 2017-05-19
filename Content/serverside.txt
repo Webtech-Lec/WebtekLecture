@@ -62,6 +62,57 @@ OWASP
 	*The Open Web Application Security Project is a worldwide not-for-profit charitable
 organization focused on improving the security of software. 
 
+The OWASP Top 10 is a powerful awareness document for web application security. It represents a broad consensus about the most critical security risks to web applications.
+Top 10 2017
+A1-Injection
+	Attackers:
+		Attackers send simple text-based attacks that exploit the syntax of the targeted interpreter. Almost any source of data 		can be an injection vector, including internal sources.
+	Security Weakness:
+		Injection flaws occur when an application sends untrusted data to an interpreter. Injection flaws are very prevalent, 			particularly in legacy code. They are often found in SQL, LDAP, XPath, or NoSQL queries; OS commands; XML parsers, SMTP 		Headers, expression languages, etc. Injection flaws are easy to discover when examining code, but frequently hard to 			discover via testing. Scanners and fuzzers can help attackers find injection flaws.
+	Prevention:
+	How Do I Prevent 'Injection'?
+	Preventing injection requires keeping untrusted data separate from commands and queries.
+
+	1.The preferred option is to use a safe API which avoids the use of the interpreter entirely or provides a parameterized interface. Be careful with APIs, such as stored procedures, that are parameterized, but can still introduce injection under the hood.
+	2. If a parameterized API is not available, you should carefully escape special characters using the specific escape syntax for that interpreter. OWASP’s Java Encoder and similar libraries provide such escaping routines.
+	3. Positive or “white list” input validation is also recommended, but is not a complete defense as many situations require special characters be allowed. If special characters are required, only approaches (1) and (2) above will make their use safe.
+A2-Broken Authentication and Session Management
+A3-Cross-Site Scripting (XSS)
+	Attackers: 
+		Attackers send text-based attack scripts that exploit the interpreter in the browser. Almost any source of data can be 			an attack vector, including internal sources such as data from the database.
+	Security Weakness:
+		XSS flaws occur when an application updates a web page with attacker controlled data without properly escaping that 			content or using a safe JavaScript API. There are two primary categories of XSS flaws: (1) Stored and (2) Reflected, and 		each of these can occur on the a) Server or b) on the Client. Detection of most Server XSS flaws is fairly easy via 			testing or code analysis. Client XSS is very difficult to identify.
+	Prevention:
+		How Do I Prevent 'Cross-Site Scripting (XSS)'?
+		Preventing XSS requires separation of untrusted data from active browser content.
+
+		1. To avoid Server XSS, the preferred option is to properly escape untrusted data based on the HTML context (body, 			attribute, JavaScript, CSS, or URL) that the data will be placed into. See the OWASP XSS Prevention Cheat Sheet 			for details on the required data escaping techniques.
+		2. To avoid Client XSS, the preferred option is to avoid passing untrusted data to JavaScript and other browser APIs 			that can generate active content. When this cannot be avoided, similar context sensitive escaping techniques can be 			applied to browser APIs as described in the OWASP DOM based XSS Prevention Cheat Sheet.
+		3.For rich content, consider auto-sanitization libraries like OWASP’s AntiSamy or the Java HTML Sanitizer Project.
+		4.Consider Content Security Policy (CSP) to defend against XSS across your entire site.
+
+A4-Broken Access Control
+A5-Security Misconfiguration
+A6-Sensitive Data Exposure
+A7-Insufficient Attack Protection
+A8-Cross-Site Request Forgery (CSRF)
+		Attackers:
+			Attackers create forged HTTP requests and trick a victim into submitting them via image tags, iframes, XSS, or 				various other techniques. If the user is authenticated, the attack succeeds.
+		Security Weakness:
+			CSRF takes advantage of the fact that most web apps allow attackers to predict all the details of a particular 				action.
+			Because browsers send credentials like session cookies automatically, attackers can create malicious web pages 				which generate forged requests that are indistinguishable from legitimate ones.
+			Detection of CSRF flaws is fairly easy via penetration testing or code analysis.
+		Prevention:
+			How Do I Prevent 'Cross-Site Request Forgery (CSRF)'?
+			The preferred option is to use an existing CSRF defense. Many frameworks now include built in CSRF defenses, 				such as Spring, Play, Django, and AngularJS. Some web development languages, such as .NET do so as well. OWASP’s 			 CSRF Guard can automatically add CSRF defenses to Java apps. OWASP’s CSRFProtector does the same for PHP or as 			an Apache filter.
+
+			Otherwise, preventing CSRF usually requires the inclusion of an unpredictable token in each HTTP request. Such 				tokens should, at a minimum, be unique per user session.
+
+			The preferred option is to include the unique token in a hidden field. This includes the value in the body of the HTTP request, avoiding its exposure in the URL.
+The unique token can also be included in the URL or a parameter. However, this runs the risk that the token will be exposed to an attacker.
+Consider using the “SameSite=strict” flag on all cookies, which is increasingly supported in browsers.
+A9-Using Components with Known Vulnerabilities
+A10-Underprotected APIs
 
 
 
@@ -75,7 +126,8 @@ organization focused on improving the security of software.
 
 
 
-
+References:
+	https://www.owasp.org/index.php/
 
 
 
