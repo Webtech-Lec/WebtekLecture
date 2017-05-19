@@ -1,0 +1,90 @@
+Server-side script
+
+Basic Concepts on server-side scripting
+	* Runs on a server, embedded in the site's code
+	* Designed to interact with back-end permanent storage, like databases, and process
+	information from the server to access the database like a direct line form user to
+	database.
+	*Facilitates the transder of data from erver to browser, bringing pages to life in 
+	the browser. 
+	*Runs-on-call when a webpage is "called-up" or when parts of pages, are "posted back"
+	 to the server with AJAX, server-side scripts process and return data.
+
+Popular Server-side Languages
+	-Php
+	-Python
+	-Ruby
+	-C++
+	-Java
+
+Server-side Frameworks
+	-Ruby on rails
+	-ASP.NET
+	-Django
+	-Node.js
+--------------------------------------------------------------------------------
+Java servlet is a java program tat extends the capabilities of a server. Although servlets can respond to any types of requests,
+they most commonly implement applications hosted on web servers, such web servlets are the java counterpart to other dynamic web 
+content technologies such as PHP and ASP.NET
+--------------------------------------------------------------------------------
+
+Node.js HTTP module
+*node.js has a built-in module called HTTP, which allows Node.js to transfer data over the HTTP.
+*to include the HTTP module, use the "require()" method (e.g var http = require('http') )
+
+*create() method to create an HTTP server: 
+	var http = require('http');
+		//create a server object
+		http.createServer(function (req, res)){
+			res.write('Hello there, Welcome to Node.js modules!');//write a response to the client
+			res.end(); //end of response
+		}).listen(8080); //the server object listens on port 8080
+
+*writeHead() method to add a header:
+	var http = require('http');
+		//create a server object
+		http.createServer(function (req, res)){
+			res.writeHead(200,{'Content-Type': 'text/html'});//displays the response header
+			res.write('Hello there, Welcome to Node.js modules!');//write a response to the client
+			res.end(); //end of response
+		}).listen(8080); //the server object listens on port 8080
+
+*http.createServer() has a req argument that represents the request from the client, as an object.
+	var http = require('http');
+		//create a server object
+		http.createServer(function (req, res)){
+			res.writeHead(200,{'Content-Type': 'text/html'});//displays the response header
+			res.writeHead(req.url);
+			res.end(); //end of response
+		}).listen(8080); //the server object listens on port 8080
+-----------------------------------------------------------------------------------------
+OWASP
+	*The Open Web Application Security Project is a worldwide not-for-profit charitable
+organization focused on improving the security of software. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
