@@ -1,399 +1,1246 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>WebtekLek</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<html lang="en">
 
-	<div id="mySidenav" class="sidenav">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="#">Contents</a>
-	  <a href="#">Prelims</a>
-	  <a href="#">Midterms</a>
-	  <a href="#">Finals</a>
-	</div>
+<head>
+	<title> WebtekLek Lecture Course Website </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description"
+		content="Webtek Lecture Course Website">
+	<meta name="keywords"
+		content="Webtech Project, SCIS, course website, jo montes">
+	<meta name="authors"
+		content="John Joseph Dupingay, Mandy Lee, Jhennie Caroline Hiyasmin Prado, Rosmella Jhoy Soriano, Troy Zareno">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-	<!-- Use any element to open the sidenav -->
-	<span onclick="openNav()">☰ Menu</span>
+<body>
+	<script type='text/javascript' src="assets/js/softscroll.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.11.0.js"></script>
+   <!-- Header | Home Page-->
+   <section id="head">
+      <header>
+         <img src="images/webtek.png" alt="landing page image">
+         <p></p>
+      </header>
+      <footer>
+         <a href="#banner" class="button style2 scrolly-middle">Proceed</a>
+      </footer>
+   </section>
 
+   <!-- Banner -->
+   <section id="banner">
+      <header>
+         <h2>Web Systems and Technologies</h2>
+      </header>
+      <p>Lecture notes for Prelims, Midterms, and Finals.</p>
+      <footer>
+         <a href="#first" class="button style2 scrolly">Topics Below</a>
+      </footer>
+   </section>
 
+   <!-- Prelims Nav-->
+   <article id="first" class="container box style1">
+      <div class="inner">
+         <header>
+            <h2 id="prelims">Preliminaries</h2>
+         </header>
+         <p>
+            <a href="#Def1">Definitions |</a>
+            <a href="#HTTP1">HTTP |</a>
+            <a href="#HTTP2">HTTP Fundamentals |</a>
+            <a href="#HTTP3">HTTP Resource Addressing |</a>
+            <a href="#HTTP4">HTTP Request Message | </a>
+            <a href="#HTTP5">HTTP Response Message | </a>
+            <a href="#HTTP5">HTTP Request Methods | </a>
+            <a href="#HTTP6">HTTP Message Headers | </a>
+            <a href="#HTTP7">HTTP Status Codes |</a>
+         </p>
+      </div>
+   </article>
+   
+   <!-- Midterms Nav -->
+   <article class="container box style1">
+      <div class="inner">
+         <header>
+            <h2 id="midterms">Mid-Semester</h2>
+         </header>
+         <p>
+            <a href="#HTML">HTML ELements |</a>
+            <a href="#CSS">CSS |</a>
+            <a href="#XHTML">XHTML |</a>
+            <a href="#CSS-Statements">CSS Statements |</a>
+            <a href="#CSS-Selectors">CSS Selectors | </a>
+            <a href="#CSS-Rule">CSS Rule Precedence | </a>
+            <a href="#CSS-Declaration">CSS Declarations | </a>
+            <a href="#JS">JavaScript | </a>
+            <a href="#JSV">JavaScript Variables | </a>
+            <a href="#global">The Global Object | </a>
+            <a href="#JS-Scope">JavaScript Scope | </a>
+            <a href="#JM">JavaScript Methods| </a>
+            <a href="#JSON">JSON | </a>
+         </p>
+      </div>
+   </article>
+   
+   <!-- Finals Nav-->
+   <article class="container box style1">
+      <div class="inner">
+         <header>
+            <h2 id="finals">Finals</h2>
+         </header>
+          <p>
+        <a href="#Servlet">Servlets |</a>
+        <a href="#Node">Node.JS |</a>   
+        <a href="#Security">WebApp Application Security |</a>
+        </p>
+      </div>
+   </article>
 
-	<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-	<div id="main">
-		<!-- Header | Home Page-->
-			<section id="header">
-				<header>
-					<img src="images/webtek.png">
-					<p></p>
-				</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">This is not mandatory, so you can proceed only if you wish to do so.</a>
-				</footer>
-			</section>
+   <!-- Prelim Notes-->
+   <div class="emptyblock"></div>
 
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Web Systems and Technologies</h2>
-				</header>
-				<p>Lecture notes for <a href="#prelim">Prelim,</a> for <a href="#midterm">Midterms,</a> and <a href="#finals">Finals</a>.</p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Act on this message</a>
-				</footer>
-			</section>
+ <div class="emptyblock"></div>
+   <section class="banner" onclick="myFunctionP()">
+      <header>
+         <h2>Prelims</h2>
+      </header>
+   </section>
+    <div id="PRELIMS">
 
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Preliminaries</h2>
-					</header>
-					<p>HTTP Fundamentals |
-					HTTP Headers |
-					HTTP Status Codes </p>
-				</div>
-			</article>
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="Def1"> Definitions </h2>
+         </header>
+         <details>
+            <summary> Internet </summary>
+			<p></p>
+            <p> - A series of computer networks connected globally and communicate using the standard Internet 
+			Protocol Suite (TCP/IP). Any communication between two computers worldwide is possible when 
+			connected to the Internet. </p>
+			<p> - Created and tested in ARPANET </p>
+			<p> - Email was introduced (1972). </p>
+			<p></p>
+         </details>
+         <details>
+            <summary> World Wide Web </summary>
+			<p></p>
+            <p> - A way of retrieving and reading information shared throughout the Internet, using the HTTP/
+			HTTPS protocol to store and share information. Web browsers are used to view documents and files 
+			are stored in Web readable formats such as HTML and CSS. </p>
+			<p> - Created by Tim Berners-Lee in his research at Cern (1989). </p>
+			<p></p>
+         </details>
+         <details>
+            <summary> Intranet </summary>
+			<p></p>
+            <p> - Limited network connection within a certain region or area, within a boundary. </p>
+			<p></p>
+         </details>
+      </section>
+   </article>
 
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Mid-Semester</h2>
-					</header>
-					<p>Under Construction</p>
-				</div>
-			</article>
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="HTTP1"> HTTP </h2>
+         </header>
+         <details>
+            <summary> HyperText Transfer Protocol </summary>
+			<p></p>
+            <ul class="default">
+               <li> Created by Tim Berners-Lee </li>
+               <li> Jointly developed by the W3C and the IETF </li>
+               <li> Layered Approach </li>
+               <li> Plain Text Data</li>
+               <li> Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web</li>
+            </ul>
+			<p></p>
+         </details>
+         <details>
+            <summary> Version History</summary>
+			<p></p>
+            <ul class="default">
+               <li> HTTP 0.9 (1991) </li>
+               <li> HTTP 1.0 (RFC 1945, May 1996) </li>
+               <li> HTTP 1.1 (RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014) </li>
+               <li> HTTP 2 (RFC 7540 May 2015, patterned after SPDY)</li>
+            </ul>
+			<p></p>
+         </details>
+      </section>
+   </article>
 
-		<!-- Feature 3 -->
-			<article id="first" class="container box style1 right">
-				<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Finals</h2>
-					</header>
-					<p>Under Construction</p>
-				</div>
-			</article>
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="HTTP2">HTTP Fundamentals</h2>
+         </header>
+            <ul class="default">
+               <li> Runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS) </li>
+               <li> Pre HTTP2 servers won’t volunteer data to clients. Client must request for the data before being given said data.</li>
+               <li> HTTP 2 follows the “push” protocol which allows servers to volunteer info based on client requests. </li>
+               </ul>
+               <details>
+                  <summary> HTTP is based on a client-server, architecture </summary>
+				  <p></p>
+                     <p>Clients (user agents UA): Web browsers, web crawlers/spiders, other end user tools and applications.</p>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> HTTP uses a request-response standard protocol </summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> The client sends an HTTP request message to the server</li>
+                     <li> The server processes the request and replies with an HTTP response message </li>
+                  </ul>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> HTTP is a stateless communications protocol </summary>
+				  <p></p>
+					 <p> Servers do not keep information about clients in-between requests. </p>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> HTTP provides support for other functionalities, such as:</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> Cache Control – to cache or not to cache (Locality of Reference – only use when needed).</li>
+                     <li> Content Media Type (MIME - Multipurpose Internet Mail Extensions) specification – no reliance on file name extension and can be opened regardless.</li>
+                     <li> Language and character set specification (Unicode/ASCII)</li>
+                     <li> Content/transfer Coding (byte by byte stream, compression up to 80-90%)</li>
+                     <li> Content Negotiation – agreement between handling of content by the server and the client (file type, language, compression)</li>
+                     <li> Client-server Protocol Negotiations (HTTP 1.0, 1.1 or 1.2)</li>
+                     <li> Persistent Connections – client retains connection to server after request and response have been sent and received.</li>
+                     <li> Request Pipelining – one requests at a time (wait for response).</li>
+                     <li> Authentication/authorization</li>
+                  </ul>
+				  <p></p>
+               </details>
+      </section>
+   </article>
 
-			<article class="container box style3">
-				<header>
-					<h2>Prelims Notes</h2>
-				</header>
-				<section>
-					<details>
-					<header>
-						<summary><h3>HTTP</h3></summary>
-					</header>
-					<ul class="default">
-						<li> Created by Tim Berners-Lee </li>
-						<li> Jointly developed by the W3C and the IETF</li>
-						<li> Layered Approach</li>
-						<li> Plain Text</li>
-						<li> Application layer communications protocol used to access resources (hypertext/hypermedia) on the World Wide Web</li>
-						<li> Version History</li>
-							<ul class="default">
-								<li> HTTP 0.9 (1991) </li>
-								<li> HTTP 1.0 (RFC 1945, May 1996) </li> 
-								<li> HTTP 1.1 (RFC 2068 January 1997, RFC 2616 June 1999), RFC 7230-7235 (June 2014) </li>
-								<li> HTTP 2 (RFC 7540 May 2015, patterned after SPDY)</li>
-							</ul>
-					</ul>
-					<details>
-				</section>
-				</hr >
-				<section>
-					<header>
-						<h3>HTTP Fundamentals</h3>
-					</header>
-					<ul class="default">
-						<li> Runs on top of TCP/IP, using TCP port 80 by default, or TCP port 443 for HTTPS (HTTP over SSL/TLS) </li>
-						<li> HTTP is based on a client-server, architecture </li>
-							<ul class="default">
-								<li> Clients (user agents UA): </li>
-									<ul class="default">
-										<li> Web browsers, web crawlers/spiders, other end user tools and applications</li>
-									</ul>
-							</ul>
-						<li> HTTP uses a request-response standard protocol </li>
-							<ul class="default">
-								<li> the client sends an HTTP request message to the server</li>
-								<li> the server processes the request and replies with an HTTP response message </li>
-							</ul>
-						<li> HTTP is a stateless communications protocol </li>
-							<ul class="default">
-								<li> servers do not keep information about clients in-between requests</li>
-							</ul>
-						<li> HTTP provides support for other functionalities, such as:
+   <article class="container box style3">
+      <section>
+         <header>
+            <h3 id="HTTP3">HTTP Resource Addressing</h3>
+         </header>
+            <ul class="default">
+               <li> Uniform Resource Name (URN) – does not matter where location is; check data availability. </li>
+               <li> Uniform Resource Locator (URL) – same as URN but also points out the location of the data.</li>
+               </ul>
+               <details>
+                  <summary> HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs</summary>
+                     <details>
+                        <summary> Scheme (HTTP or HTTPS protocols)</summary>
+						<p></p>
+						<p> Ex. http:// or https:// </p>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Authority </summary>
+						<p></p>
+                        <ul class="default">
+                           <li> domain name (resolved to an IP address using DNS) of the server where the resource resides. </li>
+                           <li> Port number (optional) </li>
+                        </ul>
+						<p> Ex. serverhere.com:8080 </p>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Path to resource (resolved relative to the document root on the server)</summary>
+						<p></p>
+                        <ul class="default">
+                           <li> May refer to a static or dynamic resource.</li>
+                        </ul>
+						<p> Ex. /where/here/there.pdf </p>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Query</summary>
+						<p></p>
+                        <ul class="default">
+                           <li> Typically provided as key=value pairs, with ampersand (&) separators between key/value pairs..</li>
+                           <li> May be URL encoded.</li>
+                        </ul>
+						<p></p>
+                     </details>
+                     <details>
+                        <summary> Fragment identifier</summary>
+						<p></p>
+                           <p> Denoted via a pound sign.</p>
+						<p></p>
+                     </details>
+					 <details>
+                        <summary> Complete URL example </summary>
+						<p></p>
+                           <p> http://serverhere.com:8080/where/here/there.pdf?here=school&stud=dudette#heading </p>
+                     </details>
+					 <p></p>
+                </details>
+     	</section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h3 id="HTTP4">HTTP Request Message</h3>
+         </header>
+               <p> CRLF – Carrier Return and Line Field (used to note the termination of a line </p>
+               <details>
+                  <summary> Request Line (CRLF - terminated line)</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> Method </li>
+                     <li> Request URI </li>
+                     <li> HTTP Protocol Versions </li>
+                  </ul>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Message Headers (general, request, and/or entity leaders)</summary>
+				  <p></p>
+                  <ul class="default">
+                     <li> HTTP 1.1 requires at least the Host request header to be provided </li>
+                     <li> Empty Line (CRLF) – done with headers</li>
+                     <li> Message Body (payload, optional)</li>
+                  </ul>
+				  <p></p>
+               </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h1 id="HTTP5">HTTP Response Message</h1>
+         </header>
+               <details>
+                  <summary> Status Line (CRLF - terminated line consisting of three space-separated values)</summary>
+                  <ul class="default">
+                     <li> HTTP Protocol Version </li>
+                     <li> 3-Digit Status Code </li>
+                     <li> Reason Phrase </li>
+                  </ul>
+               </details>
+			   <p></p>
+               <ul class="default">
+               <li> Message Headers (general, request, and/or entity leaders)</li>
+               <li> Empty Line (CRLF) </li>
+               <li> Message Body (optional)</li>
+            </ul>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <section>
+         <header>
+            <h2 id="HTTP6">HTTP Request Methods</h2>
+         </header>
+			<h3> Methods</h3>
+			<p></p>
+                  <details>
+                     <summary> GET</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Transfer a current selected representation of the resource identified by the Request URI; the retrieved resource is returned in the message of the response as an entity. </li>
+                        <li> Most commonly used HTTP method. </li>
+                        <li> Must be supported by all compliant general-purpose servers. </li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> HEAD</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Same as GET, except that the entity is not included in the response (returns only the status line and headers returned by a GET request, without the message body). </li>
+                        <li> Used to retrieve metadata about the entity implied by the request without transferring the entity itself (tests for link validity or resource modification).</li>
+                        <li> Like GET, must be supported by all general-purpose servers. </li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> POST</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li>Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the Request URI. </li>
+                        <li> Typically used in submitting HTML form data.</li>
+                        <li> Has a payload.</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> PUT</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Store the enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is either created or replaced, using the enclosed entity). </li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> DELETE</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Deletes the stored enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is deleted).</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> OPTION</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Request information about the communication. </li>
+                        <li> Asks the server, “What can I do?”</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> TRACE</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Request a loop-back of the request message (requests the server to echo back to the client the received request message). </li>
+                        <li> Typically used for teaching/diagnostics of the request/response shown.</li>
+                     </ul>
+					 <p></p>
+                  </details>
+                  <details>
+                     <summary> CONNECT</summary>
+					 <p></p>
+                     <ul class="default">
+                        <li> Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restricts its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed. </li>
+                        <li>Commonly used to create an end-to-end virtual connection.</li>
+                     </ul>
+					 <p></p>
+                  </details>
+				  <details>
+                     <summary> Safe Methods, Indempotent Methods, Cacheable Methods</summary>
+					 <p></p>
+                     <ol class="default">
+                        <li> Safe – no modification on server side after a request (GET, HEAD, OPTIONS, TRACE). </li>
+                        <li> Idempotent – results stay the same after multiple requests (GET HEAD, OPTIONS, TRACE).
+						<ul class="default">
+							<li> PUT – still expects new resources. </li>
+							<li> DELETE – no more resources to expect (remove). </li>
+						</ul>
 						</li>
-							<ul class="default">
-								<li> cache control – to cache or not to cache (Locality of Reference – only use when needed).</li>
-								<li> content media type (MIME - Multipurpose Internet Mail Extensions) specification – no reliance on file name extension and can be opened regardless.</li>
-								<li> language and character set specification (Unicode/ASCII)</li>
-								<li>content/transfer coding (byte by byte stream, compression up to 80-90%)</li>
-								<li>content negotiation – agreement between handling of content by the server and the client (file type, language, compression)</li>
-								<li> client-server protocol negotiations (HTTP 1.0, 1.1 or 1.2)</li>
-								<li> persistent connections – client retains connection to server after request and response have been sent and received.</li>
-								<li> request pipelining – one requests at a time (wait for response).</li>
-								<li>authentication/authorization</li>
-							</ul>
-						<li> Pre HTTP2 servers won’t volunteer data to clients. Client must request for the data before being given said data.</li>
-						<li>HTTP 2 follows the “push” protocol which allows servers to volunteer info based on client requests. </li>
-					</ul>
-				</section>
-				<section>
-					<header>
-						<h3>HTTP Resource Addressing</h3>
-					</header>
-					<ul class="default">
-						<li> Uniform Resource Name (URN) – does not matter where location is; check data availability. </li>
-						<li> Uniform Resource Locator (URL) – same as URN but also points out the location of the data.</li>
-						<li> HTTP Resources are identified using URIs (RFC 3986) or more specifically, HTTP URLs</li>
-							<ul class="default">
-								<li> Scheme (HTTP or HTTPS protocols)</li>
-									<ul class="default">
-										<li> Ex. http:// or https:// </li>
-									</ul>
-								<li>Authority </li> 
-									<ul class="default">
-										<li> domain name (resolved to an IP address using DNS) of the server where the resource resides. </li>
-										<li> Port number (optional) </li>
-										<li> Ex. serverhere.com:8080 </li>
-									</ul>
-								<li> Path to resource (resolved relative to the document root on the server)</li>
-									<ul class="default">
-										<li> May refer to a static or dynamic resource.</li>
-										<li> Ex. /where/here/there.pdf</li>
-									</ul>
-								<li> Query</li>
-									<ul class="default">
-										<li> Typically provided as key=value pairs, with ampersand (&) separators between key/value pairs..</li>
-										<li> May be URL encoded.</li>
-									</ul>
-								<li> Fragment identifier</li>
-									<ul class="default">
-										<li> Denoted via a pound sign.</li>
-									</ul>
-							</ul>
-					</ul>
-				</section>
-				<section>
-					<header>
-						<h3>HTTP Request Message</h3>
-					</header>
-					<ul class="default">
-						<li> Request Line (CRLF - terminated line)</li>
-							<ul class="default">
-							<li> Method </li>
-							<li> Request URI </li>
-							<li> HTTP Protocol Versions </li>
-							</ul>
-						<li> Message Headers (general, request, and/or entity leaders)</li>
-							<ul class="default">
-							<li> HTTP 1.1 requires at least the Host request header to be provided </li>
-							</ul>
-						<li> Empty Line (CRLF) – done with headers</li>
-						<li> Message Body (payload, optional)</li>
-					</ul>
-				</section>
-				<section>
-					<header>
-						<h3>HTTP Response Message</h3>
-					</header>
-					<ul class="default">
-						<li> Status Line (CRLF - terminated line consisting of three space-separated values)</li>
-							<ul class="default">
-							<li> HTTP Protocol Version </li>
-							<li> 3-Digit Status Code </li>
-							<li> Reason Phrase </li>
-							</ul>
-						<li> Message Headers (general, request, and/or entity leaders)</li>
-						<li> Empty Line (CRLF) </li>
-						<li> Message Body (optional)</li>
-					</ul>
-				</section>
+						<li> Cacheable – results are dependent on message headers. </li>
+                     </ol>
+					 <p></p>
+                  </details>
+               <details>
+                  <summary> Extension Methods </summary>
+				  <p></p>
+                  <ul class="default">
+                     <li>Web DAV (RFC 4918) </li>
+                     <li>PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
+                  </ul>
+				  <p></p>
+               </details>
+      </section>
+   </article>
 
-				<section>
-					<header>
-						<h3>HTTP Request Methods</h3>
-					</header>
-					<ui class="default">
-						<li> Standard Methods</li>
-					<ol class="default">
-						<li> GET</li>
-							<ul class="default">
-								<li> Transfer a current selected representation of the resource identified by the Request URI; the retrieved resource is returned in the message of the response as an entity. </li>
-								<li> Most commonly used HTTP method. </li>
-								<li> Must be supported by all compliant general-purpose servers. </li>
-							</ul>
-						<li> HEAD</li>
-							<ul class="default">
-								<li> Same as GET, except that the entity is not included in the response (returns only the status line and headers returned by a GET request, without the message body). </li>
-								<li> Used to retrieve metadata about the entity implied by the request without transferring the entity itself (tests for link validity or resource modification).</li>
-								<li> Like GET, must be supported by all general-purpose servers. </li>
-							</ul>
-						<li> POST</li>
-							<ul class="default">
-								<li>Perform resource-specific processing of the entities enclosed in the message body by the resource identified by the Request URI. </li>
-								<li> Typically used in submitting HTML form data.</li>
-								<li> Has a payload.</li>
-							</ul>
-						<li> PUT</li>
-							<ul class="default">
-								<li> Store the enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is either created or replaced, using the enclosed entity). </li>
-							</ul>
-						<li> DELETE</li>
-							<ul class="default">
-								<li> Deletes the stored enclosed entity in the message body under the specified Request URI (resource identified by the Request URI is deleted).</li>
-							</ul>
-						<li> OPTION</li>
-							<ul class="default">
-								<li> Request information about the communication. </li>
-								<li> Asks the server, “What can I do?”</li>
-								
-							</ul>
-						<li> TRACE</li>
-							<ul class="default">
-								<li> Request a loop-back of the request message (requests the server to echo back to the client the received request message). </li>
-								<li> Typically used for teaching/diagnostics of the request/response shown.</li>
-							</ul>
-						<li> CONNECT</li>
-							<ul class="default">
-								<li> Request the establishment of a tunnel to the destination origin server, and if successful, thereafter restricts its behaviour to blind-forwarding of packet, in both directions, until the tunnel is closed. </li>
-								<li>Commonly used to create an end-to-end virtual connection.</li>
-							</ul>
-					</ol>
-						<li> Safe Methods, Idempotent Methods, Cacheable Methods </li>
-						<li> Extension Methods </li>
-							<ul class="default">
-								<li>Web DAV (RFC 4918) </li>
-								<li>PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK</li>
-							</ul>
-					</ui>
-				</section>
-				<section>
-					<header>
-						<h3>HTTP Message Headers</h3>
-					</header>
-					<ol class="default">
-						<li> General Header Fields</li>
-							<ul class="default">
-								<li> Cache-Control </li>
-								<li> Connection Date </li>
-								<li> Date </li>
-								<li> Pragma </li>
-								<li> Trailer </li>
-								<li> Transfer-Encoding </li>
-								<li> Upgrade </li>
-								<li> Via </li>
-								<li> Warning </li>
-							</ul>
-						<li> Request Header Fields</li>
-							<ul class="default">
-								<li>Accept</li>
-								<li>Accept-Charset</li>
-								<li>Accept-Encoding</li>
-								<li>Accept-Language</li>
-								<li>Authorization</li>
-								<li>Expect</li>
-								<li>From</li>
-								<li>Host</li>
-								<li>If-Match *</li>
-								<li>If-Modified-Since *</li>
-								<li>If-None-Match *</li>
-								<li>If-Range *</li>
-								<li>If-Unmodified-Since</li>
-								<li>Max-Forwards</li>
-								<li>Proxy-Authorization</li>
-								<li>Proxy-Authorization</li>
-								<li>Range</li>
-								<li>Referrer</li>
-								<li>TE</li>
-								<li>User-Agent</li>
-							</ul>
-						<li> Response Header Fields </li>
-							<ul class="default">
-								<li>Accept-Ranges</li>
-								<li>Age</li>
-								<li>ETag (Entity Tag)</li>
-								<li>Location</li>
-								<li>Proxy-Authenticate</li>
-								<li>Retry-After</li>
-								<li>Server</li>
-								<li>Vary</li>
-								<li>WWW-Authenticate</li>
-							</ul>
-						<li> Entity Header Fields</li>
-							<ul class="default">
-								<li>Allow</li>
-								<li>Content-Encoding</li>
-								<li>Content-Language</li>
-								<li>Content-Length</li>
-								<li>Content-Location</li>
-								<li>Content-MD5(Message Digest)*</li>
-								<li>Content-Range</li>
-								<li>Content-Type</li>
-								<li>Expires</li>
-								<li>Last-Modified</li>
-							</ul>
-					</ol>
-				</section>
+   <article class="container box style3">
+      <section>
+         <header>
+            <h3 id="HTTP7">HTTP Message Headers</h3>
+         </header>
+               <details>
+                  <summary> General Header Fields</summary>
+				  <p></p>
+                  <ol class="default">
+                     <li> Cache-Control - used to specify directives to be obeyed at all times by the website caching system (determines local data storage).</li>
+                     <li> Connection Date - used to specify settings for website connection and establish persistent connections. </li>
+                     <li> Date - used to specify the date (GMT) of the request.</li>
+                     <li> Pragma - HTTP 1.0 general directive. Pragma: no-cache is the only directive defined in HTTP 1.0 and maintained in 1.1.  </li>
+                     <li> Trailer - header at the end of the message instead of start.</li>
+                     <li> Transfer-Encoding - specifies the type of encoding done to the message to safely deliver it from the sender to the receiver.</li>
+                     <li> Upgrade - specifies conversion to a new protocol (http:// --> htpps://)</li>
+                     <li> Via - identity/Watermarking. Passes through proxy, like stamp identity, onto the next.</li>
+                     <li> Warning - identifier for encoding problems.</li>
+                  </ol>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Request Header Fields</summary>
+				  <p></p>
+                  <ol class="default">
+                     <li>Accept - used for content negotiations to be accepted.</li>
+                     <li>Accept-Charset - request for a specific character set (Unicode, ASCII, ANSI).</li>
+                     <li>Accept-Encoding - request for specific encoding (compression type).</li>
+                     <li>Accept-Language - request for specific language for the webpage (English, Japanese, French).</li>
+                     <li>Authorization - contains credentials of the request of the user-agent (authorization handshake).</li>
+                     <li>Expect - checks if the server can handle the request (triggers status code 100 or 417).</li>
+                     <li>From - email of the user-agent sending the request.</li>
+                     <li>Host - specifies the host and port of the requested resource. Virtualhost support. No host = bad request (400)</li>
+                     <li>If-Match - specifies request to be followed if the server resources matches the entity tag.</li>
+                     <li>If-Modified-Since - conditional request; if resource has not been modified since the given time, the resource is not returned.</li>
+                     <li>If-None-Match - conditional request; resource is only returned when the entity tag is matched.</li>
+                     <li>If-Range - specifies portions of the resource to be returned; resource is only returned when the specified range meets the request.</li>
+                     <li>If-Unmodified-Since - conditional request; server performs operation only if the resource has not been modified since the specified time.</li>
+                     <li>Max-Forwards - limits the number of proxies a trace will request go through (trace until 2nd/3rd proxy).</li>
+                     <li>Proxy-Authorization - authentication with a proxy as the middleman (identification of user-agent to a proxy).</li>
+                     <li>Range - specified partial range of content to be returned (bytes).</li>
+                     <li>Referrer - shows the link where the resource is from (URI).</li>
+                     <li>TE – trailer encoding; indicates the Transfer-Enoding to be accepted by the user agent.</li>
+                     <li>User-Agent - information about the sender of the request (name, compatibility, OS).</li>
+                  </ol>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Response Header Fields </summary>
+				  <p></p>
+                  <ol class="default">
+                     <li>Accept-Ranges - specifies the server’s acceptance of range requests for its resources.</li>
+                     <li>Age - informs the user-agent of how long since the response was generated by the server (how old the response is).</li>
+                     <li>ETag (Entity Tag) - identifier for the resource.
+                     </li>
+                     <li>Location - redirection of the request to the location of the resource.</li>
+                     <li>Proxy-Authenticate - part of the 407 status code response (user-agent is required authentication).</li>
+                     <li>Retry-After - part of the 503 status code response (sets time before the request can be made again).</li>
+                     <li>Server - server information (Apache, nginx).</li>
+                     <li>Vary - content negotiation; specified different sources of the entity.</li>
+                     <li>WWW-Authenticate - part of the 401 status code response (issues a challenge that indicates required authentication parameters).</li>
+                  </ol>
+				  <p></p>
+               </details>
+               <details>
+                  <summary> Entity Header Fields</summary>
+				  <p></p>
+                  <ol class="default">
+                     <li>Allow - specifies operations that can be done on an entity (PUT, POST, DELETE, etc.)</li>
+                     <li>Content-Encoding - indicates encoding of media type (gzip).</li>
+                     <li>Content-Language – indicates the intended language of the resource.</li>
+                     <li>Content-Length - indicates the length of the resource (bytes).</li>
+                     <li>Content-Location – indicates the location of the resource, where it’s from.</li>
+                     <li>Content-MD5(Message Digest) - hashing: change in data is a change in hash </li>
+                     <li>Content-Range - indicates the range of bytes; resource is sent partially to specify where it belongs in full resource body.</li>
+                     <li>Content-Type - indicates the extension of the resource (.html, .css, .jpg, .gif, etc.).</li>
+                     <li>Expires - indicates how long the user-agent can keep the content in the cache.</li>
+                     <li>Last-Modified - indicates when the resource was last changed.</li>
+                  </ol>
+				  <p></p>
+               </details>
+      </section>
+   </article>
+
+   <article class="container box style3">
+      <header>
+         <h3 id="HTTP8">HTTP Status Codes</h3>
+         <p>The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role. </p>
+      </header>
+      <section>
+         <details>
+            <summary>Informational (1xx)</summary>
+            <p>It means the request has been received and the process is continuing.</p>
+            <ol class="default">
+               <li>100 Continue – the user agent should continue with the request.</li>
+               <li>101 Switching Protocols – can upgrade protocol then send; the server will switch protocol to those defined by the response’s upgrade header field immediately.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Success (2xx)</summary>
+            <p>It means the action was successfully received, understood, and accepted.</p>
+            <ol class="default">
+               <li>200 Ok – most common; indicates that the user-agent request was received. </li>
+               <li>201 Created – submitted via PUT; the request has been accepted and a new resource has been created.</li>
+               <li>202 Accepted – the request has been submitted/accepted but not yet fully processed; the request may or may not be acted upon by the server.</li>
+               <li>203 Non-Authoritative Information – the meta information may not be the definitive one available from the server; it is not required and is only appropriate when the response would be 200 otherwise.</li>
+               <li>204 No Content – the request has been submitted but does not return anything; primarily used to allow for user agent input without modifying the document view (new meta data is still applied to the document, if there are any).</li>
+               <li>205 Reset Content – the request has been submitted and the server side agent is to reset the document view for the user agent.</li>
+               <li>206 Partial Content – a partial GET request for a resource has been submitted.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Redirection (3xx)</summary>
+            <p>It means further action must be taken in order to complete the request.</p>
+            <ol class="default">
+               <li>300 Multiple Choices – there are multiple representations of the resource and the user agent is provided with a choice and is redirected accordingly.</li>
+               <li>301 Moved Permanently – the request has been moved to a new permanent URI; resource references are pointed towards the new URI. </li>
+               <li>302 Found – the resource is in a temporary URI; alteration of the location is a possibility and the user agent is alerted of such. </li>
+               <li>303 See Other – the response to a request is under a different URI; allows for the redirection of the user agent to the selected resource.</li>
+               <li>304 Not Modified – request has been submitted and accepted; document has not been modified and indicates that the resource entity is not cached.</li>
+               <li>305 Use Proxy – redirection to indicate that the resource is to be accessed through a proxy.</li>
+               <li>306 – no longer used.</li>
+               <li>307 Temporary Redirect – the client is redirected temporarily to a URI before going to the resource location.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Client Error (4xx)</summary>
+            <p>It means the request contains incorrect syntax or cannot be fulfilled.</p>
+            <ol class="default">
+               <li>400 Bad Request – the user agent is not understood by the server; usually a URL syntax error (typos, misspellings or such).</li>
+               <li>401 Unauthorized – user agent authorization has been refused by the server due to request credentials not matching set authentication standards.</li>
+               <li>402 Payment Required – not used; reserved for future use.</li>
+               <li>403 Forbidden – user agent request is understood but not granted; the server does not wish to make the information available.</li>
+               <li>404 Not Found – a matching request URI has not been found by the server; used when no response is applicable or if the server wishes to withhold information about the request refusal.</li>
+               <li>405 Method Not Allowed – the method specified is not allowed for the requested resource.</li>
+               <li>406 Not Acceptable – the resource generates unacceptable content characteristics based off the Accept headers of the request and is not returned.</li>
+               <li>407 Proxy Authentication Required – indicates the requirement of the user agent to authenticate with the proxy before resource access.</li>
+               <li>408 Request Time-out – the user agent is unable to make a request within a set time limit by the server.</li>
+               <li>409 Conflict – the user agent request is in conflict with the resource (most likely PUT requests); only returned when the user agent is capable of resolving the conflict.</li>
+               <li>410 Gone – the requested resource is completely unavailable and no longer in the server (no redirection; no addresses to be forwarded to).</li>
+               <li>411 Length Required –the user agent failed to specify the length of the resource to be returned in accordance with the server’s Content-Length header.</li>
+               <li>412 Precondition Failed – preconditions may be set by user agents to apply to the requested resource; response code is returned if the precondition set is evaluated as false.</li>
+               <li>413 Request Entity Too Large – the requested resource is larger than what the server is expected to handle; can be the inability of the server to process a response or a set limitation of resource size.</li>
+               <li>414 Request-URI Too Long – the requested resource URI is longer than what the server is expected to handle.</li>
+               <li>415 Unsupported Media Type – the requested resource media format is unsupported by the actual resource in the server.</li>
+               <li>416 Request Range Not Satisfiable – the Accept-Range of the request is not in match with the range set by the server standards.</li>
+               <li>417 Expectation Failed – paired with the Expect request header and is returned when the server is unable to handle the request.</li>
+               <li>426 Upgrade Required – the request may be accepted by the server is the user agent switches to a different protocol.</li>
+            </ol>
+			<p></p>
+         </details>
+         <details>
+            <summary>Server Error (5xx)</summary>
+            <p>It means the server failed to fulfill an apparently valid request.</p>
+            <ol class="default">
+               <li>500 Internal Server Error – the server has encountered an unexpected error and the user agent request is dropped.</li>
+               <li>501 Not Implemented – the server is lacking the functionality to fulfill the user agent request.</li>
+               <li>502 Bad Gateway – gateway/proxy error; invalid response from an upper connection to the server and the latter is unable to fulfill the request.</li>
+               <li>503 Service Unavailable – the server is under maintenance or overloading and is unable to process the user agent request.</li>
+               <li>504 Gateway Time-out – gateway/proxy error; untimely response from an upper connection to the server and the latter is unable to fulfill the request.</li>
+               <li>505 HTTP Version Not Supported – the server is unable to process the request due to refusal or inability to support the HTTP protocol version specified.</li>
+            </ol>
+			
+         </details>
+      </section>
+   </article>
+</div>
+	    
+   <!--Midterm Notes-->
+   <div class="emptyblock"></div>
+   <section class="banner" onclick="myFunctionM()">
+      <header>
+         <h2>Midterms</h2>
+      </header>
+   </section> 
+   <div id="Midterms">
+	   
+   <article class="container box style3">
+   <section>
+      <header>
+         <h2 id="HTML"> HTML (HyperText Markup Language) Elements </h2>
+      </header>
+      <details>
+         <summary>Head</summary>
+            <ol class="default">
+               <li>Title – it specifies the title of the document</li>
+               <li>Base – it specifies the base URLS for the document</li>
+               <li>Link – used to link the stylesheet to the HTML</li>
+               <li>Meta – represents metadata that cannot be represented by other HTML meta-related elements</li>
+               <li>Style – contains style for the document</li>    
+            </ol>
+       </details>  
+       <details>
+            <summary>Body</summary>
+            <ul class="default">An element that contains the content of the HTML document</ul>
+            <ol class="default">
+               <li>article, aside, max, section</li>
+               <li>Header contains some of the heading elements for introductory, 
+               Footer contains the footer for the sectioning root element of the HTML</li>
+               <li>main (main content)</li>
+               <li>address (content information)</li>
+               <li>div (generic divider for block elements)</li>
+               <li>h1, h2, h3, h4, h5, h6 (six levels of headings)</li>
+               <li>p (paragraph) represents block of texts</li>
+               <li>hr (horizontal line)</li>
+               <li>pre (prformatted text)</li>
+               <li>blockquote (for quotations)</li>
+               <li>ol, ul (ordered list, unordered list)</li>
+               <li>li (list)</li>
+               <li>di (description list)</li>
+               <li>dt, dd (defines a term, describe each term) these represent, identify description for lists</li>
+               <li>figure represents self-contained content</li>
+               <li>figcaption represents a caption or a legend associated with a figure</li>
+               <li>a (tag defines a hyperlink)</li>
+               <li>em, strong, small, s  (*not used anymore)</li>
+               <li>cite, q - must include the title of a work or a URL reference</li>
+               <li>dfn, abbr (defining instances, abbreviation)</li>
+               <li>ruby, rb, rt, rtc, rp (ruby annotations)</li>
+               <li>date, time – these elements attributes include the global attributes.</li>
+               <li>code, var, samp, kbd</li>
+               <li>sup, sub</li>
+               <li>l, b, u, mark</li>
+               <li>bdi, bdo (bidirectional text)</li>
+               <li>span (generic divider for inline elements)</li>
+               <li>br, wbr</li>
+               <li>ins, del (document insertion and deletion)</li>
+            </ol>
+      <details>
+            <summary>Table</summary>
+             <ul class="default">represents tabular data</ul>
+            <ol class="default">
+               <li>caption</li>
+               <li>colgroup (column group), col (column)</li>
+               <li>thead (table head), tbody (table body), tfoot (table foot)</li>
+               <li>tr (defines a row in a table)</li>
+               <li>th, td (defines a header cell, defines a cell in a table)</li>   
+            </ol>
+      </details>
+      <details>
+            <summary>Form</summary>
+             <ul class="default">Represents a document section that contains interactive controls to submit information to a web server.</ul>
+            <ol class="default">
+               <li>Label - represents a caption for an item in a user interface.</li>
+               <li>Input - is used to create interactive controls for web-based forms in order to accept data from the user.</li>
+               <li>Button - represents a clickable button.</li>
+            </ol>
+      </details>
+      </details>
+   </section>
+   </article>
+   
+  <article class="container box style3">
+      <header>
+         <h2 id="CSS"> CSS (Cascading Style Sheets)</h2>
+      </header>
+         <ul class="default">
+            <li>Language used to specify the presentation aspects (e.g layout and formatting) of struturally marked up documents.</li>
+            <li>Developed by Hakom Wium Lie(CHSS) and Bert Bos(SSp)</li>
+            <li>Versions
+               <ul class="default">
+                  <li>CSS 1 (December 1996)</li>
+                  <li>CSS 2.1 (June 2011)</li>
+                  <li>CSS 3</li>
+               </ul>
+               <p></p>
+            <li>CSS Preprocessor(Sass, Less, Stylus, CSS-Crush, Myth, Rework)</li>
+            <li>CSS Framework (960 Grid System, Bootstrap, Foundation, Materialize)</li>
+         </ul>
+   </article>
+   
+   <article class="container box style3">
+      <header>
+         <h2 id="XHTML"> HTML/XHTML Style Sheets </h2>
+      </header>
+            <details>
+            <summary>Author styles</summary>
+               <ol class="default">
+               <p>The author specifies style sheets for a source document according to the conventions of the document language. For instance, in HTML, style sheets may be included in the document or linked externally.</p>
+                  <li>External Stylesheet (Recommended)</li>
+                  <ul class="default">
+                     <li>Uses the link element (ref, type, href, media, title)
+                     <li>Alternate stylesheet supported in firefox</li>
+                  </ul>
+                  <li>Embedded Styles</li>
+                     <ul class="default">
+                        <li>Responsive Design</li>
+                        <li>For quick prototyping</li>
+                     </ul>
+                  <li>Inline Styles</li>
+               </ol>
+            </details>
+            <details>
+            <summary>User styles</summary>
+               <p>The user may be able to specify style information for a particular document. For example, the user may specify a file that contains a style sheet or the user agent may provide an interface that generates a user style sheet (or behaves as if it did).</p>
+            </details>
+            <details>
+            <summary>User agent styles</summary>
+            <p>Conforming user agents must apply a default style sheet (or behave as if they did). A user agent's default style sheet should present the elements of the document language in ways that satisfy general presentation expectations for the document language (e.g., for visual browsers, the EM element in HTML is presented using an italic font). Style sheets from these three origins will overlap in scope, and they interact according to the cascade.</p>
+             <ul class="default">
+               <li>The browser uses default CSS 2.1 stylesheets for HTML 4</li>
+            </ul>
+            </details>
+   </article>
+   
+   <article class="container box style3">
+      <header>
+         <h2 id="CSS-Statements"> CSS Statements</h2>
+      </header>
+            <details>
+               <summary>At - Rules</summary>
+                  <ul class="default">
+                  <li>@charset - defines the character enciding used in the stylesheet</li>
+                  <li>@import - used to import style rules to other stylesheets</li>
+                  <li>@media - for sets of nested statements</li>
+                  <li>@font-face(define and download webfonts)</li>
+                  <li>@keyframes(keyframe animation)</li>
+                  <li>@page - used to modify when printing a document</li>
+                  </ul>
+            </details>
+            <details>
+               <summary>CSS Rule Set (aka CSS Rules. Style Rules)</summary>
+                  <ul class="default">
+                     <li>Consist of a selector, followed by a brace-enclosed declaration block (e.g *body is a selector)</li>
+                  </ul>
+            </details>
+   </article>
+   
+  <article class="container box style3">
+      <header>
+         <h2 id="CSS-Selectors"> CSS Selectors</h2>
+      </header>
+      
+         <details>
+         <summary> Selectors </summary>
+            <ul class="default">
+               <li>Structure used as a condition in a CSS rule to determine which elements in the 
+               documentation tree are matched by the selector and are thus targeted by the formatting
+               specified in the CSS rule declaration block.</li>
+               <li>The matched elements are called the subjects of the selector</li>
+            </ul>
+         </details>
+         
+         <details>
+         <summary> Selector syntax </summary>
+            <ol class="default">
+               <li>Chain of one or more sequences of simple selectors separated by combinators, 
+               with one pseudo-element possibly appended to the last sequence.
+               <ul>Example: div #abc> p.xyz[title]+span:first child::after</ul>
+               <ul> > , + = contributor </ul>
+               <ul> After = pseudo-element</ul>
+               <ul>Span:first child::after = pseudo-class</ul>
+               </li>
+               <li>Sequence of simple selectors
+                  <ul class="default">
+                     <li>Chain of simple selectors not separated by combinators</li>
+                     <li>Always starts with a type sector or a universal selector</li>
+                     <li>Cannot contain other type selectors or universal selectors</li>
+                  </ul>
+               </li>
+               <li>Group of selectors
+               <ul class="default">
+                  <li>Coma-separated list of selectors representing the union of all elements (e.g h1, h2, h3)</li>
+               </ul>
+            </ol>
+         </details>
+         
+         <details>
+         <summary> Simple Selectors </summary>
+            <ol class="default">
+               <li>Type selector (p, div, span)</li>
+               <li>Universal selector (*)</li>
+               <li>Attribute selector
+                  <ul class="default">
+                     <li>[attr]</li>
+                     <li>[attr=value]</li>
+                     <li>[attr~=value](class attribute)</li>
+                     <li>[attr|=value](language attribute)</li>
+                     <li>[attr^=value](start CSS3)</li>
+                     <li>[attr$=value](end CSS3)</li>
+                     <li>[attr*=value](anywhere in between CSS3)</li>
+                  </ul>
+               <li>Class selector( < p class="xyz" >)</li>
+               <li>ID selector (< div id="abc" > *for ID attribute)</li>
+               <li>Pseudo-selector
+                  <ul class="default">
+                     <li>Dynamic Pseudo-class
+                        <ol class="default">
+                           <li>link pseudo-class
+                           <ul>
+                              <li>:link</li>
+                              <li>:visited</li>
+                           </ul>
+                           <li>user action pseudo-class
+                           <ul>
+                              <li>:hover</li>
+                              <li>:active</li>
+                              <li>:focus</li>
+                           </ul>
+                           <li>target pseudo-class
+                           <ul>
+                              <li>:target(CSS3)</li>
+                           </ul>
+                           <li>language pseudo-class
+                           <ul>
+                              <li>:lang()</li>
+                           </ul>
+                           <li>UI element states pseudo-class
+                           <ul>
+                              <li>:enabled (CSS3)</li>
+                              <li>:disable (CSS3)</li>
+                              <li>:checked(CSS3)</li>
+                              <li>:indeterminate(CSS3)</li>
+                           </ul>
+                           <li>structural pseudo-class
+                           <ul>
+                              <li>:root</li>
+                              <li>:first-child</li>
+                              <li>:last-child</li>
+                              <li>:only-child</li>
+                              <li>:nth-child()</li>
+                              <li>:nth-last-child</li>
+                              <li>:first-of-type</li>
+                              <li>:last-of-type</li>
+                              <li>:only-of-type</li>
+                              <li>:nth-of-type()</li>
+                              <li>:nth-last-of-type()</li>
+                              <li>:empty</li>
+                           </ul>
+                           <li>Negation
+                           <ul>
+                              <li>:not (CSS3)</li>
+                           </ul>
+                        </ol>
+                  </ul>
+               <li>Combinators</li>
+                  <ul class="default">
+                     <li>descendant combinator (whitespace ie space, tab, line feed, carriage return, form feed)</li>
+                     <li>child combinator(>)</li>
+                     <li>sibling combinators</li>
+                        <ul style="list-style-type:square">
+                           <li>adjacent sibling combinator(+)</li>
+                           <li>general sibling combinator(~) CSS3</li>
+                        </ul>
+                  </ul>
+
+               <li>Pseudo-elements</li>
+                  <ul class="default">
+                     <li>::first-letter ,:first-letter</li>
+                     <li>::first-line ,:first-line</li>
+                     <li>::before ,:before</li>
+                     <li>::after ,:after</li>
+                  </ul>
+            </ol>
+         </details>  
+   </article>
+   
+  <article class="container box style3">
+      <header>
+         <h2 id="CSS-Rule"> CSS Rule Precedence</h2>
+      </header>
+      <details>
+         <summary>By origin and importance</summary>
+         <ul class="default">
+            <li>User agent important declarations</li>
+            <li>user important declarations</li>
+            <li>author important declarations</li>
+            <li>author normal declarations</li>
+            <li>user normal declarations</li>
+            <li>user agent normal declarations</li>
+         </ul>
+      </details>
+      <details>
+         <summary>By specificity</summary>
+         <ul class="default">
+            <li>inline style</li>
+            <li>number of ID selector</li>
+            <li>number of class selectors, attribute selectors and pseudo-classes</li>
+            <li>number of type selectors and pseudo-elements</li>
+         </ul> 
+      </details>
+      <details>
+      <summary>By order</summary>
+      <ul class="default">
+            <li>Last declaration wins</li>
+      </ul>
+      </details>
+   </article>
+
+   <article class="container box style3">
+      <header>
+         <h2 id="CSS-Declaration"> CSS Declarations</h2>
+      </header>
+      <details>
+         <summary>Properties</summary>
+            <ol class="default">
+            <li>Shorthand Properties</li>
+               <ul class="default">
+                  <li>initial (non-inheritable, global keyword)</li>
+                  <li>inherit (inheritable)</li>
+                  <li>unset (inheritable, non-inheritable)</li>
+                  <li>revert (global keyword)</li>
+               </ul>
+            <li>Vendor-specific extensions</li>
+               <ul class="default">
+                  <li>also known as vendor prefixes</li>
+               </ul>
+         </ol>
+      </details>
+      <details>
+         <summary>Values</summary>
+         <ol class="default">
+            <li>Keywords</li>
+            <li>Numbers (integer, reals in decimal notation)</li>
+            <li>Dimensions</li>
+               <ul style="list-style-type:square">
+                  <li>length, angle, duration, frequency, resolution</li>
+                  <li>length units:</li>
+                     <ul class="default">
+                        <li>font-relative: em ex ch rem</li>
+                        <li>viewport-percentage: vw vmin vmax</li>
+                        <li>absolute lengths: cm mm q in pt pc px</li>
+                     </ul>
+                  <li>angle units: deg grad rad turn</li>
+                  <li>duration units: s ms</li>
+                  <li>frequency units: hz khz</li>
+                  <li>resolution units: dpi dpcm dppx</li>
+               </ul>
+            <li>Percentages</li>
+            <li>URL's and URI's</li>
+            <li>Color</li>
+            <li>Strings</li>
+            <li>Functions</li>
+               <ul class="default">
+                  <li>calc()</li>
+                  <li>attr()</li>
+                  <li>counter()</li>
+                  <li>counters()</li>
+                  <li>linear-gradient()</li>
+                  <li>radial-gradient()</li>
+                  <li>translate()</li>
+                  <li>scale()</li>
+                  <li>rotate()</li>
+               </ul>
+         </ol> 
+      </details>
+   </article>
+
+   <article class="container box style3">
+      <header>
+         <h2 id="JS"> JavaScript</h2>
+      </header>
+               <p>JavaScript (JS) is a lightweight interpreted or JIT-compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as node.js and Apache CouchDB. JavaScript is a prototype-based, multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles.</p>
+               <li>The < script > tag is used to define a client-side script (JavaScript).</li>
+               <li>The < script > element either contains scripting statements, or it points to an external script file through the src attribute.</li>
+               <details><summary>Between SCRIPT Tags</summary>
+                Instead of specifying a src attribute, you can write javascript between the [<script>] and [</script>]tags.</details>
+               <details><summary>Inline in the HTML</summary>
+               Normally the HTML event attributes are used to call functions specified elsewhere in script tags. In rare cases you may wish to add the javascript code directly to these onClick or onMouseOver event tags, but this is not consdered good design.</details>
+               <details><summary>External Script</summary>
+               There are several ways an external script can be executed:
+               <ul class="default">
+                <li>If async="async": The script is executed asynchronously with the rest of the page (the script will be executed while the page continues the parsing)</li>
+                <li>If async is not present and defer="defer": The script is executed when the page has finished parsing</li>
+                <li>If neither async or defer is present: The script is fetched and executed immediately, before the browser continues parsing the page.</li>
+               </ul>
+   </article>
+
+ <article class="container box style3">
+      <header>
+         <h2 id="JSV"> Javascript Variables </h2>
+      </header>
+         <p>Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to call it:
+         <br> var myVariable; </p>
+         <details>
+         <summary> Note that variables have different data types:</summary>
+         <ul class="default">
+            <li>String - A sequence of text known as a string. To signify that the variable is a string, you should enclose it in quote marks.</li>
+            <li>Number - A number. Numbers don't have quotes around them.</li>
+            <li>Boolean - A True/False value. The words true and false are special keywords in JS, and don't need quotes.</li>
+            <li>Array - A structure that allows you to store multiple values in one single reference.</li>
+            <li>Object - Basically, anything. Everything in JavaScript is an object, and can be stored in a variable.</li>
+         </ul>
+            <p> Both let and const create variables that are block-scoped – they only exist within the innermost block that surrounds them.
+            Let -declared variable tmp only exists inside the then-block of the if statement:
+            In contrast, var-declared variables are function-scoped.
+            const creates immutable variables  
+            <ul class="default">
+            <li>Variables created by let are mutable:</li>
+            <li>Variables created by const, constants, are immutable:</li>
+            <li>Note that const does not affect whether the value of a constant itself is mutable or not: If a constant refers to an object, it will always refer to that object, but the object itself can still be changed (if it is mutable).</li>
+            </ul>
+         </details>
+   </article>
+
+   <article class="container box style3">
+      <header>
+         <h2 id="global"> The Global Object </h2>
+      </header>
+      <p>JavaScript’s global object (window in web browsers, global in Node.js) is more a bug than a feature, especially with regard to performance. That’s why it’s not surprising that ES6 introduces a distinction:</p>
+      <p>All properties of the global object are global variables. In global scope, the following declarations create such properties:</p>
+         <ul class="default">
+            <li>Var declarations</li>
+            <li>Function declarations</li>
+         </ul>
+      <p>But there are now also global variables that are not properties of the global object. In global scope, the following declarations create such variables:</p>
+         <ul class="default">
+            <li>Let declarations</li>
+            <li>Const declarations</li>
+            <li>Class declarations</li>
+         </ul>
+   </article>
+
+   <article class="container box style3">
+      <header> 
+      <h2 id="JS-Scope"> Javascript Scope </h2>
+      </header>
+      <p>In JavaScript, objects and functions are also variables.Scope is the set of variables, objects, and functions you have access to. The scope changes inside functions.</p>
+      <details>
+            <summary>Local JavaScript Variables</summary>
+               <p>Variables declared within a JavaScript function, become LOCAL to the function. Local variables that are created when a function starts, and deleted when the function is completed, have local scope: They can only be accessed within the function.
+               <br> Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.
+               </p>
+      </details>
+      <details>
+         <summary>Global JavaScript Variables</summary>
+            <p>A variable declared outside a function, becomes GLOBAL.
+               A global variable has global scope: All scripts and functions on a web page can access it. </p>
+      </details>
+      <details>
+         <summary>Automatically Global</summary>
+               <p>If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable. </p>
+      </details>
+      <details>
+         <summary>Global Variables in HTML</summary>
+            <p>With JavaScript, the global scope is the complete JavaScript environment.
+               In HTML, the global scope is the window object. All global variables belong to the window object.</p>
+      </details>
+   </article>
+
+   <article class="container box style3">
+         <header> 
+         <h2 id="JM"> Javascript Methods </h2>
+         </header>
+         <p>JavaScript methods are the actions that can be performed on objects and a JavaScript method is a property containing a function definition</p>
+      </article>
+
+   <article class="container box style3">
+      <header> 
+      <h2 id="JSON"> JSON </h2>
+      </header>
+      <p>JSON is a format for storing and transporting data. JSON is often used when data is sent from a server to a web page.</p>
+      <details>
+            <summary>What is JSON?</summary>
+              <ul class="default">
+                  <li>JSON stands for JavaScript Object Notation</li>
+                  <li>JSON is lightweight data interchange format</li>
+                  <li>JSON is "self-describing" and easy to understand</li>
+                  <li>JSON is language independent *</li>
+                  <li>* The JSON syntax is derived from JavaScript object notation syntax, but the JSON format is text only. Code for reading and generating JSON data can be written in any programming language.</li>
+              </ul>
+      </details>
+
+      <p>The JSON Format Evaluates to JavaScript Objects The JSON format is syntactically identical to the code for creating JavaScript objects. Because of this similarity, a JavaScript program can easily convert JSON data into native JavaScript objects.</p>
+      <details>
+         <summary>JSON Syntax Rules</summary>
+           <ul class="default">
+                  <li>Data is in name/value pairs</li>
+                  <li>Data is separated by commas</li>
+                  <li>Curly braces hold objects</li>
+                  <li>Square brackets hold arrays</li>
+           </ul>
+      </details>
+   </article>
+   </div>
 
 
+<div class="emptyblock"></div>  
+<section class="banner" onclick="myFunctionF()">
+      <header>
+         <h2>FINALS</h2>
+      </header>
+   </section>
+<div id="Finals">                  
+   <article class="container box style3">
+      <header> 
+      <h2 id="Node">Node.JS </h2>
+      </header>
+       <p>Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.</p>
+      <details>
+            <summary>More about Node.JS</summary>
+              <ul class="default">
+                  <li>Node.js was developed by Ryan Dahl in 2009 and its latest version is v0.10.36.</li>
+                  <li>Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.</li>
+                  <li>Node.js also provides a rich library of various JavaScript modules which simplifies the development of web applications using Node.js to a great extent.</li>
+              </ul>
+      </details>
+      <details>
+         <summary>Features of Node.JS</summary>
+           <ul class="default">
+                  <li>Asynchronous and Event Driven</li>
+                <p>All APIs of Node.js library are asynchronous, that is, non-blocking. It essentially means a Node.js based server never waits for an API to return data. The server moves to the next API after calling it and a notification mechanism of Events of Node.js helps the server to get a response from the previous API call.</p>
+               <li>Very Fast</li>
+               <p>Being built on Google Chrome's V8 JavaScript Engine, Node.js library is very fast in code execution.</p>
 
+               <li>Single Threaded but Highly Scalable</li> <p>Node.js uses a single threaded model with event looping. Event mechanism helps the server to respond in a non-blocking way and makes the server highly scalable as opposed to traditional servers which create limited threads to handle requests. Node.js uses a single threaded program and the same program can provide service to a much larger number of requests than traditional servers like Apache HTTP Server.</p>
 
-				<section>
-					<header>
-						<h3>END</h3>
-					</header>
-				</section>
-			</article>
-		-->
+               <li>No Buffering</li><p> Node.js applications never buffer any data. These applications simply output the data in chunks.</p>
 
-		<section id="footer">
-			<ul class="icons">
-				<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-				<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-				<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-				<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
+               <li>License</li> <p>Node.js is released under the MIT license</p>
+           </ul>
+      </details>
+       <details>
+        <summary>Who uses Node.js</summary>
+           <p>Following is the link on github wiki containing an exhaustive list of projects, application and companies which are using Node.js. This list includes eBay, General Electric, GoDaddy, Microsoft, PayPal, Uber, Wikipins, Yahoo!, and Yammer to name a few.</p>
+       </details>
+       <details>
+           <summary>Where to use Node.Js</summary>
+           <ul class="default">
+            <li>I/O bound Applications</li>
+            <li>Data Streaming Applications</li>
+            <li>Data Intensive Real-time Applications (DIRT)</li>
+            <li>JSON APIs based Applications</li>
+            <li>Single Page Applications</li>
+           </ul>
+       </details>
+   </article>
+    
+    <article class="container box style3">
+      <header> 
+      <h2 id="mean">MEAN Stacks</h2>
+      </header>
+       <p>The term MEAN stack refers to a collection of JavaScript based technologies used to develop web applications. MEAN is an acronym for MongoDB, ExpressJS, AngularJS and Node.js. From client to server to database, MEAN is full stack JavaScript. </p>
+      <details>
+            <summary>M.E.A.N.</summary>
+              <ul class="default">
+                  <li>MongoDB is a schemaless NoSQL database system. MongoDB saves data in binary JSON format which makes it easier to pass data between client and server.</li>
+                  <li>Express is lightweight framework used to build web applications in Node. It provides a number of robust features for building single and multi page web application. Express is inspired by the popular Ruby framework, Sinatra.</li>
+                  <li>AngularJS is a JavaScript framework developed by Google. It provides some awesome features like the two-way data binding. It’s a complete solution for rapid and awesome front end development.</li>
+                  <li>Node.js is a server side JavaScript execution environment. It’s a platform built on Google Chrome’s V8 JavaScript runtime. It helps in building highly scalable and concurrent applications rapidly.</li>
+              </ul>
+      </details>
+   </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		</div>
-		<script>
-	function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+   </div>
+                   
+                   
+<!--Footer-->
+   <article class="container box style3">
+      <details>
+		<summary> Sources </summary>
+		 <ul class="default">
+		 <li> Lecture class notes </li>
+		 <li> Beal, V. (2010, June 24). The Difference Between the Internet and World Wide Web. Retrieved from http://www.webopedia.com/DidYouKnow/Internet/Web_vs_Internet.asp </li>
+		 <li> Status Code Definitions. (n.d.). Retrieved from https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </li>
+		 <li> T. (n.d.). HTTP Header Fields. Retrieved from http://www.tutorialspoint.com/http/http_header_fields.htm </li>
+		 </ul>
+	  </details>
+   </article>
 
-	function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
-}
-</script>
-	</body>
+   <section id="footer">
+      <ul class="copyright">
+         <li>&copy; 9355A IT 324 Webtek Lecture | Dupingay, Lee, Prado, Soriano, Zareno | </li>
+		 <li> Template Design: <a href="http://html5up.net"> HTML5 UP</a></li>
+      </ul>
+   </section>
+	  
+  <script> //Drop Down
+      //prelim
+      function myFunctionP() {
+          var x = document.getElementById('PRELIMS');
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
+      //midterms
+      function myFunctionM() {
+          var x = document.getElementById('Midterms');
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
+      //finals
+      function myFunctionF() {
+          var x = document.getElementById('Finals');
+          if (x.style.display === 'none') {
+              x.style.display = 'block';
+          } else {
+              x.style.display = 'none';
+          }
+      }
+   </script>
+</body>
+
 </html>
 
 <!--
